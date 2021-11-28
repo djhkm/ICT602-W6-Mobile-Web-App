@@ -25,7 +25,8 @@ Steps
 
 ## Side Notes
 
-- Material Design Lite [Components](https://getmdl.io/components/index.html).
+- Will be using Material Design Lite [Components](https://getmdl.io/components/index.html).
 - Tutorial [Youtube](https://youtube.com/playlist?list=PLdWygvf7_YnA5oPGw7Z4_7LM7RrDhE8-S).
+- Example templates are located in `templates` folder
 - Download the latest code before you start developing by running this command `git pull` on git.
 - Additional `css` or `js` files is to be put in respective folder.
