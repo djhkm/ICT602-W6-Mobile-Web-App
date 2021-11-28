@@ -26,5 +26,5 @@ Steps
 ## Side Notes
 
 - Tutorial [Youtube](https://youtube.com/playlist?list=PLdWygvf7_YnA5oPGw7Z4_7LM7RrDhE8-S).
-- Download the latest code before you start developing by running this command `git pull` or any suitable tools.
+- Download the latest code before you start developing by running this command `git pull` on git.
 - Additional `css` or `js` files is to be put in respective folder.
