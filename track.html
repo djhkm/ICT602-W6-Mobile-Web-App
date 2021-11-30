@@ -62,7 +62,7 @@
           <span class="android-mobile-title mdl-layout-title">
             <!-- <img class="android-logo-image" src="images/logo.png"> -->
           </span>
-          <!-- <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+           <!--button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
@@ -70,7 +70,7 @@
             <li class="mdl-menu__item">4.4 KitKat</li>
             <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
             <li class="mdl-menu__item">Android History</li>
-          </ul> -->
+          </ul--> 
         </div>
       </div>
 
@@ -88,7 +88,19 @@
       </div>
 
       <div class="android-content mdl-layout__content">
-        <div class="mdl-typography--text-center">Start Here</div>
+        <div class="mdl-typography--text-center">
+			<p class="mdl-typography--title">Track My Parcel</p>	
+			<form method='GET' name='trackingForm' id='trackingForm'>
+				<div class='mdl-textfield mdl-js-textfield'>
+					<input class='mdl-textfield__input' autofocus type='text' id='trackingNum' name='trackingNum'/>
+					<label class='mdl-textfield__label' for='trackingNum'>ABC12345</label>
+				</div>
+				<br>
+			Type in your tracking number above.
+			<br><br>
+				<input class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect' type='submit' value='Track'/>
+			</form>
+		</div>
       </div>
     </div>
     <!-- <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a> -->
