@@ -101,7 +101,7 @@
       		padding-left: 5px;
       	}
 
-      	.parcelDiv{
+      	.manyParcelDiv{
       		overflow-x: scroll;
       	}
 
@@ -135,13 +135,6 @@
 							<input type="checkbox" id="switch-multipleDom" class="mdl-switch__input" checked>
 							<span class="mdl-switch__label">Multiple Parcels</span>
 						</label>
-					</div>
-					<div id="numParcelDomCont">
-						<div class="mdl-textfield mdl-js-textfield">
-							<label class="mdl-label" for="numParcelDom">Number of Parcels</label>
-						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="numParcelDom">
-						    <span class="mdl-textfield__error">Input is not a number!</span>
-						</div>
 					</div>
 					<div>
 						<h5 class="title5">Sender Details</h5>
@@ -187,7 +180,7 @@
 					</div>
 					<div>
 						<h5 class="title5">Parcel Details</h5>
-						<div class="parcelDiv">
+						<div class="manyParcelDiv" id="manyParcelDivDom">
 							<table class="mdl-data-table mdl-js-data-table">
 					  			<thead>
 								    <tr>
@@ -206,6 +199,52 @@
 								    </tr>
 					  			</tbody>
 							</table>
+						</div>
+						<div id="singleParcelDivDom" hidden="true">
+							<div class="inputContainer">
+							<label class="mdl-label" for="singleDom-parName">Parcel Name</label>
+							<input class="mdl-textfield__input" type="text" id="single-parName">
+						</div>
+						<div class="inputContainer">
+							<label class="mdl-label" for="singleDom-parVal">Value (RM)</label>
+							<div class="mdl-textfield mdl-js-textfield">
+							    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-parVal">
+							    <label class="mdl-textfield__label" for="singleDom-parVal"></label>
+							    <span class="mdl-textfield__error">Input is not a number!</span>
+							</div>
+						</div>
+						<div class="inputContainer">
+							<label class="mdl-label" for="singleDom-actWeight">Actual Weight (KG)</label>
+							<div class="mdl-textfield mdl-js-textfield">
+							    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-actWeight">
+							    <label class="mdl-textfield__label" for="singleDom-actWeight"></label>
+							    <span class="mdl-textfield__error">Input is not a number!</span>
+							</div>
+						</div>
+						<div class="inputContainer">
+							<label class="mdl-label" for="singleDom-length">Length (CM)</label>
+							<div class="mdl-textfield mdl-js-textfield">
+							    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-length">
+							    <label class="mdl-textfield__label" for="singleDom-length"></label>
+							    <span class="mdl-textfield__error">Input is not a number!</span>
+							</div>
+						</div>
+						<div class="inputContainer">
+							<label class="mdl-label" for="singleDom-width">Width (CM)</label>
+							<div class="mdl-textfield mdl-js-textfield">
+							    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-width">
+							    <label class="mdl-textfield__label" for="singleDom-width"></label>
+							    <span class="mdl-textfield__error">Input is not a number!</span>
+							</div>
+						</div>
+						<div class="inputContainer">
+							<label class="mdl-label" for="singleDom-height">Height (CM)</label>
+							<div class="mdl-textfield mdl-js-textfield">
+							    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-height">
+							    <label class="mdl-textfield__label" for="singleDom-height"></label>
+							    <span class="mdl-textfield__error">Input is not a number!</span>
+							</div>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -236,12 +275,12 @@
 		<script>
 			document.getElementById("switch-multipleDom").addEventListener("change", function(){
 				if(this.checked){
-					document.getElementById("numParcelDom").disabled = false;
-					document.getElementById("numParcelDomCont").hidden = false;
+					//document.getElementById("numParcelDom").disabled = false;
+					document.getElementById("manyParcelDivDom").hidden = false;
+					document.getElementById("singleParcelDivDom").hidden = true;
 				}else{
-					document.getElementById("numParcelDom").disabled = true;
-					document.getElementById("numParcelDom").value = null;
-					document.getElementById("numParcelDomCont").hidden = true;
+					document.getElementById("manyParcelDivDom").hidden = true;
+					document.getElementById("singleParcelDivDom").hidden = false;
 					//set value to 1 during submission!
 				}
 			});
@@ -268,6 +307,9 @@
 				document.getElementById("domesticContainer").hidden = true;
 			}
 
+			function addrow(){
+
+			}
 		</script>
 		<!-- end -->
 
