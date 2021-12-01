@@ -1,0 +1,872 @@
+Index: assets/getmdl-select-master/getmdl-select.min.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/assets/getmdl-select-master/getmdl-select.min.css b/assets/getmdl-select-master/getmdl-select.min.css
+new file mode 100644
+--- /dev/null	(date 1527869996000)
++++ b/assets/getmdl-select-master/getmdl-select.min.css	(date 1527869996000)
+@@ -0,0 +1,3 @@
++.getmdl-select{outline:none}.getmdl-select .mdl-textfield__input{cursor:pointer}.getmdl-select .selected{background-color:#ddd}.getmdl-select .mdl-icon-toggle__label{float:right;margin-top:-30px;color:rgba(0,0,0,0.4);transform:rotate(0);transition:transform 0.3s}.getmdl-select.is-focused .mdl-icon-toggle__label{color:#3f51b5;transform:rotate(180deg)}.getmdl-select .mdl-menu__container{width:100% !important;margin-top:2px}.getmdl-select .mdl-menu__container .mdl-menu{width:100%}.getmdl-select .mdl-menu__container .mdl-menu .mdl-menu__item{font-size:16px}.getmdl-select__fix-height .mdl-menu__container .mdl-menu{overflow-y:auto;max-height:288px !important}.getmdl-select__fix-height .mdl-menu.mdl-menu--top-left{bottom:auto;top:0}
++
++/*# sourceMappingURL=getmdl-select.min.css.map */
+Index: assets/getmdl-select-master/getmdl-select.min.css.map
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/assets/getmdl-select-master/getmdl-select.min.css.map b/assets/getmdl-select-master/getmdl-select.min.css.map
+new file mode 100644
+--- /dev/null	(date 1527869996000)
++++ b/assets/getmdl-select-master/getmdl-select.min.css.map	(date 1527869996000)
+@@ -0,0 +1,1 @@
++{"version":3,"file":"getmdl-select.min.css","sources":["getmdl-select.scss"],"sourcesContent":[".getmdl-select {\r\n  outline: none;\r\n  .mdl-textfield__input {\r\n    cursor: pointer;\r\n  }\r\n  .selected {\r\n    background-color: #ddd;\r\n  }\r\n  .mdl-icon-toggle__label {\r\n    float: right;\r\n    margin-top: -30px;\r\n    color: rgba(0, 0, 0, 0.4);\r\n    transform: rotate(0);\r\n    transition: transform 0.3s;\r\n  }\r\n  &.is-focused {\r\n    .mdl-icon-toggle__label {\r\n      color: #3f51b5;\r\n      transform: rotate(180deg);\r\n    }\r\n  }\r\n\r\n  .mdl-menu__container {\r\n    width: 100% !important;\r\n    margin-top: 2px;\r\n    .mdl-menu {\r\n      width: 100%;\r\n      .mdl-menu__item {\r\n        font-size: 16px;\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n.getmdl-select__fix-height {\r\n  .mdl-menu__container .mdl-menu {\r\n    overflow-y: auto;\r\n    max-height: 288px !important;\r\n  }\r\n  .mdl-menu.mdl-menu--top-left {\r\n    bottom: auto;\r\n    top: 0;\r\n  }\r\n}"],"mappings":"AAAA,AAAA,cAAc,AAAC,CACb,OAAO,CAAE,IAAK,CA+Bf,AAhCD,AAEE,cAFY,CAEZ,qBAAqB,AAAC,CACpB,MAAM,CAAE,OAAQ,CACjB,AAJH,AAKE,cALY,CAKZ,SAAS,AAAC,CACR,gBAAgB,CAAE,IAAK,CACxB,AAPH,AAQE,cARY,CAQZ,uBAAuB,AAAC,CACtB,KAAK,CAAE,KAAM,CACb,UAAU,CAAE,KAAM,CAClB,KAAK,CAAE,eAAI,CACX,SAAS,CAAE,SAAM,CACjB,UAAU,CAAE,cAAe,CAC5B,AAdH,AAgBI,cAhBU,AAeX,WAAW,CACV,uBAAuB,AAAC,CACtB,KAAK,CAAE,OAAQ,CACf,SAAS,CAAE,cAAM,CAClB,AAnBL,AAsBE,cAtBY,CAsBZ,oBAAoB,AAAC,CACnB,KAAK,CAAE,eAAgB,CACvB,UAAU,CAAE,GAAI,CAOjB,AA/BH,AAyBI,cAzBU,CAsBZ,oBAAoB,CAGlB,SAAS,AAAC,CACR,KAAK,CAAE,IAAK,CAIb,AA9BL,AA2BM,cA3BQ,CAsBZ,oBAAoB,CAGlB,SAAS,CAEP,eAAe,AAAC,CACd,SAAS,CAAE,IAAK,CACjB,AAKP,AACuB,0BADG,CACxB,oBAAoB,CAAC,SAAS,AAAC,CAC7B,UAAU,CAAE,IAAK,CACjB,UAAU,CAAE,gBAAiB,CAC9B,AAJH,AAKW,0BALe,CAKxB,SAAS,AAAA,mBAAmB,AAAC,CAC3B,MAAM,CAAE,IAAK,CACb,GAAG,CAAE,CAAE,CACR","names":[]}
+\ No newline at end of file
+Index: assets/getmdl-select-master/getmdl-select.min.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/assets/getmdl-select-master/getmdl-select.min.js b/assets/getmdl-select-master/getmdl-select.min.js
+new file mode 100644
+--- /dev/null	(date 1527869996000)
++++ b/assets/getmdl-select-master/getmdl-select.min.js	(date 1527869996000)
+@@ -0,0 +1,2 @@
++"use strict";!function(){function e(){getmdlSelect.init(".getmdl-select")}window.addEventListener?window.addEventListener("load",e,!1):window.attachEvent&&window.attachEvent("onload",e)}();var getmdlSelect={_defaultValue:{width:300},_addEventListeners:function(e){var t=e.querySelector("input"),n=e.querySelector('input[type="hidden"]'),l=e.querySelectorAll("li"),a=e.querySelector(".mdl-js-menu"),o=e.querySelector(".mdl-icon-toggle__label"),i="",c="",s="",u=!1,d=function(o){var i=o.textContent.trim();if(t.value=i,l.forEach(function(e){e.classList.remove("selected")}),o.classList.add("selected"),e.MaterialTextfield.change(i),setTimeout(function(){e.MaterialTextfield.updateClasses_()},250),n.value=o.dataset.val||"",c=t.value,s=n.value,"createEvent"in document){var u=document.createEvent("HTMLEvents");u.initEvent("change",!1,!0),a.MaterialMenu.hide(),t.dispatchEvent(u)}else t.fireEvent("onchange")},r=function(){u=!1,t.value=c,n.value=s,e.querySelector(".mdl-menu__container").classList.contains("is-visible")||e.classList.remove("is-focused");var l=document.querySelectorAll(".getmdl-select .mdl-js-menu");[].forEach.call(l,function(e){e.MaterialMenu.hide()});var o=new Event("closeSelect");a.dispatchEvent(o)};document.body.addEventListener("click",r,!1),e.onkeydown=function(l){9==l.keyCode&&(t.value=c,n.value=s,a.MaterialMenu.hide(),e.classList.remove("is-focused"))},t.onfocus=function(e){a.MaterialMenu.show(),a.focus(),u=!0},t.onblur=function(e){e.stopPropagation()},t.onclick=function(t){t.stopPropagation(),a.classList.contains("is-visible")?(a.MaterialMenu.hide(),u=!1):(a.MaterialMenu.show(),r(),e.classList.add("is-focused"),u=!0)},t.onkeydown=function(l){27==l.keyCode&&(t.value=c,n.value=s,a.MaterialMenu.hide(),e.MaterialTextfield.onBlur_(),""!==i&&(e.querySelector(".mdl-textfield__label").textContent=i,i=""))},a.addEventListener("closeSelect",function(l){t.value=c,n.value=s,e.classList.remove("is-focused"),""!==i&&(e.querySelector(".mdl-textfield__label").textContent=i,i="")}),a.onkeydown=function(l){27==l.keyCode&&(t.value=c,n.value=s,e.classList.remove("is-focused"),""!==i&&(e.querySelector(".mdl-textfield__label").textContent=i,i=""))},o&&(o.onclick=function(l){l.stopPropagation(),u?(a.MaterialMenu.hide(),u=!1,e.classList.remove("is-focused"),e.MaterialTextfield.onBlur_(),t.value=c,n.value=s):(r(),e.MaterialTextfield.onFocus_(),t.focus(),a.MaterialMenu.show(),u=!0)}),[].forEach.call(l,function(n){n.onfocus=function(){e.classList.add("is-focused");var l=n.textContent.trim();t.value=l,e.classList.contains("mdl-textfield--floating-label")||""!=i||(i=e.querySelector(".mdl-textfield__label").textContent.trim(),e.querySelector(".mdl-textfield__label").textContent="")},n.onclick=function(){d(n)},n.dataset.selected&&d(n)})},init:function(e){var t=document.querySelectorAll(e);[].forEach.call(t,function(e){getmdlSelect._addEventListeners(e),componentHandler.upgradeElement(e),componentHandler.upgradeElement(e.querySelector("ul"))})}};
++//# sourceMappingURL=getmdl-select.min.js.map
+\ No newline at end of file
+Index: assets/getmdl-select-master/getmdl-select.min.js.map
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/assets/getmdl-select-master/getmdl-select.min.js.map b/assets/getmdl-select-master/getmdl-select.min.js.map
+new file mode 100644
+--- /dev/null	(date 1527869996000)
++++ b/assets/getmdl-select-master/getmdl-select.min.js.map	(date 1527869996000)
+@@ -0,0 +1,1 @@
++{"version":3,"sources":["src\\js\\getmdl-select.js"],"names":["whenLoaded","getmdlSelect","init","window","addEventListener","attachEvent","_defaultValue","width","_addEventListeners","dropdown","input","querySelector","hiddenInput","list","querySelectorAll","menu","arrow","label","previousValue","previousDataVal","opened","setSlectedItem","li","value","textContent","trim","forEach","classList","remove","add","MaterialTextfield","change","setTimeout","updateClasses_","dataset","val","document","evt","createEvent","initEvent","hide","dispatchEvent","fireEvent","hideAllMenus","contains","menus","call","event","Event","body","onkeydown","keyCode","onfocus","e","show","focus","onblur","stopPropagation","onclick","onBlur_","onFocus_","selected","selector","dropdowns","componentHandler","upgradeElement"],"mappings":"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","file":"getmdl-select.min.js","sourceRoot":"E:\\html5\\GitHub\\getmdl-select"}
+\ No newline at end of file
+Index: assets/getmdl-select-master/gulpfile.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/assets/getmdl-select-master/gulpfile.js b/assets/getmdl-select-master/gulpfile.js
+new file mode 100644
+--- /dev/null	(date 1527869996000)
++++ b/assets/getmdl-select-master/gulpfile.js	(date 1527869996000)
+@@ -0,0 +1,41 @@
++'use strict';
++
++var gulp = require('gulp'),
++    rename = require('gulp-rename'),
++    sass = require('gulp-sass'),
++    sourcemaps = require('gulp-sourcemaps'),
++    sassFiles = ['./src/scss/**/*.scss'],
++    uglify = require('gulp-uglifyjs'),
++    jsFiles = ['src/js/**/*.js'],
++    babel = require('gulp-babel');
++
++gulp.task('sass', function () {
++  gulp
++    .src(sassFiles)
++    .pipe(sourcemaps.init())
++    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
++    .pipe(rename(function(path) {
++      path.dirname = '';
++      path.basename = 'getmdl-select';
++      path.extname = '.min.css';
++    }))
++    .pipe(sourcemaps.write('./'))
++    .pipe(gulp.dest('./'));
++});
++
++gulp.task('js', function() {
++  gulp
++    .src(jsFiles)
++    .pipe(babel())
++    .pipe(uglify('getmdl-select.min.js', {
++      outSourceMap: true
++    }))
++    .pipe(gulp.dest('./'));
++});
++
++gulp.task('watch', function () {
++  gulp.watch(sassFiles, ['sass']);
++  gulp.watch(jsFiles, ['js']);
++});
++
++gulp.task('default', ['sass', 'js'], function(){});
+\ No newline at end of file
+Index: assets/getmdl-select-master/LICENSE.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/assets/getmdl-select-master/LICENSE.txt b/assets/getmdl-select-master/LICENSE.txt
+new file mode 100644
+--- /dev/null	(date 1527869996000)
++++ b/assets/getmdl-select-master/LICENSE.txt	(date 1527869996000)
+@@ -0,0 +1,21 @@
++MIT License
++
++Copyright (c) 2016 CreativeIT 
++
++Permission is hereby granted, free of charge, to any person obtaining a copy
++of this software and associated documentation files (the "Software"), to deal
++in the Software without restriction, including without limitation the rights
++to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
++copies of the Software, and to permit persons to whom the Software is
++furnished to do so, subject to the following conditions:
++
++The above copyright notice and this permission notice shall be included in all
++copies or substantial portions of the Software.
++
++THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
++IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
++AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
++LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
++OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
++SOFTWARE.
+Index: assets/getmdl-select-master/package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/assets/getmdl-select-master/package.json b/assets/getmdl-select-master/package.json
+new file mode 100644
+--- /dev/null	(date 1527869996000)
++++ b/assets/getmdl-select-master/package.json	(date 1527869996000)
+@@ -0,0 +1,33 @@
++{
++  "name": "getmdl-select",
++  "version": "2.0.1",
++  "description": "select for material-design-lite",
++  "repository": {
++    "type": "git",
++    "url": "git+https://github.com/CreativeIT/getmdl-select.git"
++  },
++  "keywords": [
++    "material",
++    "mdl",
++    "getmdl",
++    "select",
++    "getmdl-select",
++    "dropdown",
++    "getmdl-dropdown"
++  ],
++  "author": "CreativeIT",
++  "homepage": "https://github.com/CreativeIT/getmdl-select#readme",
++  "devDependencies": {
++    "bower": "1.5.2",
++    "gulp": "3.9.0",
++    "gulp-rename": "1.2.2",
++    "gulp-sass": "2.0.4",
++    "gulp-sourcemaps": "1.5.2",
++    "gulp-uglifyjs": "0.6.2",
++    "gulp-babel": "5.3.0"
++  },
++  "dependencies": {
++    "material-design-lite": "1.1.3"
++  },
++  "license": "MIT"
++}
+Index: assets/getmdl-select-master/README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/assets/getmdl-select-master/README.md b/assets/getmdl-select-master/README.md
+new file mode 100644
+--- /dev/null	(date 1527869996000)
++++ b/assets/getmdl-select-master/README.md	(date 1527869996000)
+@@ -0,0 +1,98 @@
++    
++# getmdl-select
++Material Design Lite selectfield component for [material-design-lite](https://github.com/google/material-design-lite)
++
++## Live example
++
++![alt tag](https://raw.github.com/CreativeIT/getmdl-select/gh-pages/lib/index_mdl/select_mdl.gif)
++
++Check out the [DEMO](http://creativeit.github.io/getmdl-select/)
++
++## Install
++
++There are three ways to install getmdl-select:
++
++ 1. Using [npm](http://npmjs.org/):
++    Use this command in your command line: 
++    ```bash
++    npm install getmdl-select
++    ```
++ 2. Using [Bower](http://bower.io/):
++    Use this command in your command line: 
++    ```bash
++    bower install getmdl-select
++    ```
++ 3. Clone the repo using Git:
++
++    ```bash
++    git clone https://github.com/CreativeIT/getmdl-select.git
++    ```
++    
++    Alternatively you can [download](https://github.com/CreativeIT/getmdl-select/archive/master.zip)
++this repository and then:
++    
++    ```bash
++    cd getmdl-select   
++    npm install
++    ```
++
++## Basic use
++To use any MDL component, you must include the minified CSS and JavaScript files using standard relative-path references in the `<head>` section of the page, as described in the MDL Introduction.
++   ```html
++   <!-- getmdl -->
++   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
++   <link rel="stylesheet" href="your_path_to/material-design-lite/material.min.css">
++   <script defer src="your_path_to/material-design-lite/material.min.js"></script>   
++   <!--getmdl-select-->   
++   <link rel="stylesheet" href="path_to/getmdl-select/getmdl-select.min.css">
++   <script defer src="path_to/getmdl-select/getmdl-select.min.js"></script>
++   ```
++
++### Example
++
++Simple select field. To see other examples visit [this page](http://creativeit.github.io/getmdl-select/).
++ ```html
++    <div class="mdl-textfield mdl-js-textfield getmdl-select">
++       <input class="mdl-textfield__input" value="" id="country" readonly/>
++       <input value="" type="hidden" name="country"/>
++       <label class="mdl-textfield__label" for="country">Country</label>
++       <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu" for="country">
++         <li class="mdl-menu__item" data-val="BLR">Belarus</li>
++         <li class="mdl-menu__item" data-val="BRA">Brazil</li>
++         <li class="mdl-menu__item" data-val="FRA">France</li>
++         <li class="mdl-menu__item" data-val="DEU">Germany</li>
++         <li class="mdl-menu__item" data-val="RUS">Russia</li>
++       </ul>
++    </div>
++ ```
++### Important
++If you want to use more than one getmdl-select item use different ids for inputs and don't forget to change `ul` and `label`'s `for` attributes. It works wrong without this.
++
++## Configuration options 
++#### Dynamically usage
++For dynamically usage, you must add `getmdlSelect.init(cssSelector)` in javascript code, (where cssSelector, for example, is `".getmdl-select"` or `"#mySelect"`), after new item is created or any new element added to existing list. 
++
++#### data-val
++Every `li` should have its own `data-val` attribute. Choosing any element of select you change `value` of hidden `input` as `data-val` property of corresponding
++`li`. Also you change `value` of readonly `input` to `li.textContent`. Then after form submit, next pair `hiddenInputName=hiddenInputValue` will send to server side.
++
++#### Pre-selected item
++To set pre-selected value add `data-selected="true"` attribute to corresponding `li` in your list.
++
++#### Width
++Initial Select takes the default width (300px). You can change it by overriding the CSS property `width`.
++
++#### Height
++Options list automatically adapt to the maximum height by content. If you want to use small height (300px) and see scroll bar, add class `getmdl-select__fix-height`.
++    
++## LICENSE
++See the [LICENSE file](https://github.com/CreativeIT/getmdl-select/blob/master/LICENSE.txt)(MIT).
++
++## Hire us
++We are ready to bring value to your business. Visit our site [creativeit.io](http://creativeit.io/) or drop us a line <hello@creativeit.io>. We will be happy to help you!
++
++## Support the project
++* Star the repo
++* Create issue report or feature request
++* [Tweet about it](https://twitter.com/CreativeITeam)
++* Follow us on [Twitter](https://twitter.com/CreativeITeam)
+Index: contact.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!doctype html>\r\n\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"utf-8\">\r\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n  <meta name=\"description\" content=\"ICT602 Week 6 Mobile Web Application\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0\">\r\n  <title>Contact</title>\r\n\r\n  <!-- Page styles -->\r\n  <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en\">\r\n  <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">\r\n  <link rel=\"stylesheet\" href=\"assets/mdl/material.min.css\">\r\n  <link rel=\"stylesheet\" href=\"css/styles.css\">\r\n  <style>\r\n    #view-source {\r\n      position: fixed;\r\n      display: block;\r\n      right: 0;\r\n      bottom: 0;\r\n      margin-right: 40px;\r\n      margin-bottom: 40px;\r\n      z-index: 900;\r\n    }\r\n  </style>\r\n  <script src=\"assets/mdl/material.min.js\"></script>\r\n\r\n  <!-- Additional CSS and JS start here-->\r\n  <link href=\"css/example.css\">\r\n  <script src=\"js/example.js\"></script>\r\n  <!-- Additional CSS and JS end here-->\r\n</head>\r\n<body>\r\n<div class=\"mdl-layout mdl-js-layout mdl-layout--fixed-header\">\r\n\r\n  <div class=\"android-header mdl-layout__header mdl-layout__header--waterfall\">\r\n    <div class=\"mdl-layout__header-row\">\r\n      <span class=\"android-title mdl-layout-title\">\r\n        <!-- <img class=\"android-logo-image\" src=\"images/logo.png\"> -->\r\n      </span>\r\n      <!-- Add spacer, to align navigation to the right in desktop -->\r\n      <div class=\"android-header-spacer mdl-layout-spacer\"></div>\r\n      <!-- <div class=\"android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width\">\r\n        <label class=\"mdl-button mdl-js-button mdl-button--icon\" for=\"search-field\">\r\n          <i class=\"material-icons\">search</i>\r\n        </label>\r\n        <div class=\"mdl-textfield__expandable-holder\">\r\n          <input class=\"mdl-textfield__input\" type=\"text\" id=\"search-field\">\r\n        </div>\r\n      </div> -->\r\n      <!-- Navigation -->\r\n      <div class=\"android-navigation-container\">\r\n        <nav class=\"android-navigation mdl-navigation\">\r\n          <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" href=\"index.html\">Home</a>\r\n          <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" href=\"about.html\">About</a>\r\n          <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" href=\"track.html\">Track my parcel</a>\r\n          <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" href=\"shipping.html\">Shipping</a>\r\n          <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" href=\"contact.html\">Contact</a>\r\n        </nav>\r\n      </div>\r\n      <span class=\"android-mobile-title mdl-layout-title\">\r\n            <!-- <img class=\"android-logo-image\" src=\"images/logo.png\"> -->\r\n          </span>\r\n      <!-- <button class=\"android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect\" id=\"more-button\">\r\n        <i class=\"material-icons\">more_vert</i>\r\n      </button>\r\n      <ul class=\"mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect\" for=\"more-button\">\r\n        <li class=\"mdl-menu__item\">5.0 Lollipop</li>\r\n        <li class=\"mdl-menu__item\">4.4 KitKat</li>\r\n        <li disabled class=\"mdl-menu__item\">4.3 Jelly Bean</li>\r\n        <li class=\"mdl-menu__item\">Android History</li>\r\n      </ul> -->\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"android-drawer mdl-layout__drawer\">\r\n    <span class=\"mdl-layout-title\">\r\n      <!-- <img class=\"android-logo-image\" src=\"images/logo-white.png\"> -->\r\n    </span>\r\n    <nav class=\"mdl-navigation\">\r\n      <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" href=\"index.html\">Home</a>\r\n      <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" href=\"about.html\">About</a>\r\n      <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" href=\"track.html\">Track my parcel</a>\r\n      <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" href=\"shipping.html\">Shipping</a>\r\n      <a class=\"mdl-navigation__link mdl-typography--text-uppercase\" href=\"contact.html\">Contact</a>\r\n    </nav>\r\n  </div>\r\n\r\n  <div class=\"android-content mdl-layout__content\">\r\n    <div class=\"mdl-grid col-center\">\r\n      <div class=\"mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col\">\r\n        <div class=\"mdl-typography--text-center\">Start Here</div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<!-- <a href=\"https://github.com/google/material-design-lite/blob/mdl-1.x/templates/android-dot-com/\" target=\"_blank\" id=\"view-source\" class=\"mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-color&#45;&#45;accent mdl-color-text&#45;&#45;accent-contrast\">View Source</a> -->\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/contact.html b/contact.html
+--- a/contact.html	(revision b381b2a2a07653aa53467e3ca4427f806ec27771)
++++ b/contact.html	(date 1638398414989)
+@@ -29,6 +29,8 @@
+   <!-- Additional CSS and JS start here-->
+   <link href="css/example.css">
+   <script src="js/example.js"></script>
++  <link rel="stylesheet" href="assets/getmdl-select-master/getmdl-select.min.css">
++  <script src="assets/getmdl-select-master/getmdl-select.min.js"></script>
+   <!-- Additional CSS and JS end here-->
+ </head>
+ <body>
+@@ -88,9 +90,107 @@
+   </div>
+ 
+   <div class="android-content mdl-layout__content">
+-    <div class="mdl-grid col-center">
+-      <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+-        <div class="mdl-typography--text-center">Start Here</div>
++    <div class="mdl-grid">
++      <div class="mdl-cell mdl-cell--12-col mdl-typography--text-center mdl-typography--text-uppercase padding-top-title">Contact Us</div>
++      <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
++        <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop mdl-grid">
++          <div class="mdl-cell mdl-cell--12-col">
++            <div class="form-title">Reason for Contact</div>
++            <div class="mdl-textfield mdl-js-textfield getmdl-select mdl-textfield--full-width">
++              <input type="text" value="" class="mdl-textfield__input" id="input1" readonly>
++              <input type="hidden" value="" name="input1">
++              <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
++              <label for="input1" class="mdl-textfield__label"></label>
++              <ul for="input1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
++                <li class="mdl-menu__item" data-val="GI" data-selected="true">General Inquiries</li>
++                <li class="mdl-menu__item" data-val="SP">Delivery Problem</li>
++                <li class="mdl-menu__item" data-val="DP">Dispatcher Problem</li>
++                <li class="mdl-menu__item" data-val="IP">Item Problem</li>
++              </ul>
++            </div>
++          </div>
++          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop">
++            <div class="form-title">Name</div>
++            <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
++              <input class="mdl-textfield__input" type="text" id="input2">
++              <label class="mdl-textfield__label" for="input2"></label>
++            </div>
++          </div>
++          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop">
++            <div class="form-title">Email</div>
++            <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
++              <input class="mdl-textfield__input" type="email" id="input3">
++              <label class="mdl-textfield__label" for="input3"></label>
++            </div>
++          </div>
++          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop">
++            <div class="form-title">Phone</div>
++            <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
++              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="input4">
++              <label class="mdl-textfield__label" for="input4"></label>
++              <span class="mdl-textfield__error">Input is not a number!</span>
++            </div>
++          </div>
++          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop">
++            <div class="form-title">Phone (Home)</div>
++            <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
++              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="input5">
++              <label class="mdl-textfield__label" for="input5"></label>
++              <span class="mdl-textfield__error">Input is not a number!</span>
++              <div class="mdl-typography--text-right">
++                <small>optional</small>
++              </div>
++            </div>
++          </div>
++          <div class="mdl-cell mdl-cell--12-col">
++            <div class="form-title">Tracking Number</div>
++            <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
++              <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z,0-9]*" id="input6">
++              <label class="mdl-textfield__label" for="input6"></label>
++              <span class="mdl-textfield__error">Input is not an alphanumeric!</span>
++            </div>
++          </div>
++          <div class="mdl-cell mdl-cell--12-col">
++            <div class="form-title">Complainer</div>
++            <div class="mdl-textfield mdl-js-textfield getmdl-select mdl-textfield--full-width">
++              <input type="text" value="" class="mdl-textfield__input" id="input7" readonly>
++              <input type="hidden" value="" name="input7">
++              <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
++              <label for="input7" class="mdl-textfield__label"></label>
++              <ul for="input7" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
++                <li class="mdl-menu__item" data-val="R" data-selected="true">Receiver</li>
++                <li class="mdl-menu__item" data-val="S">Sender</li>
++              </ul>
++            </div>
++          </div>
++          <div class="mdl-cell mdl-cell--12-col">
++            <div class="form-title">Message</div>
++            <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
++              <textarea class="mdl-textfield__input" type="text" rows= "5" id="input8"></textarea>
++              <label class="mdl-textfield__label" for="input8"></label>
++            </div>
++          </div>
++          <div class="mdl-cell mdl-cell--12-col mdl-typography--text-center">
++            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
++              Send
++            </button>
++          </div>
++        </div>
++        <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop">
++          <div class="map-responsive">
++            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.002462406747!2d103.16271411526019!3d5.262271337996153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b7bef3b0ba24a9%3A0xc32efb50bc0e5e31!2sUiTM%20Kampus%20Kuala%20Terengganu!5e0!3m2!1sen!2smy!4v1638396207178!5m2!1sen!2smy" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
++          </div>
++          <br>
++          <h5>UiTM Kampus Kuala Terengganu</h5>
++          <br>
++          <b class="form-title">Office Address: </b>
++          <p class="margin-bottom-0px">UiTM Kampus Kuala Terengganu</p>
++          <p>21080 Kuala Terengganu, Terengganu</p>
++          <b class="form-title">Operating Hours: </b>
++          <p class="margin-bottom-0px">8.00 a.m - 5.00 p.m (Sunday-Thursday)</p>
++          <p class="margin-bottom-0px">8.00 a.m - 12.00 p.m (Friday)</p>
++          <p>Closed (Saturday)</p>
++        </div>
+       </div>
+     </div>
+   </div>
+Index: assets/getmdl-select-master/src/js/getmdl-select.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/assets/getmdl-select-master/src/js/getmdl-select.js b/assets/getmdl-select-master/src/js/getmdl-select.js
+new file mode 100644
+--- /dev/null	(date 1527869996000)
++++ b/assets/getmdl-select-master/src/js/getmdl-select.js	(date 1527869996000)
+@@ -0,0 +1,190 @@
++{
++    'use strict';
++    (function () {
++        function whenLoaded() {
++            getmdlSelect.init('.getmdl-select');
++        };
++
++        window.addEventListener ?
++            window.addEventListener("load", whenLoaded, false) :
++            window.attachEvent && window.attachEvent("onload", whenLoaded);
++
++    }());
++
++    var getmdlSelect = {
++        _addEventListeners: function (dropdown) {
++            var input = dropdown.querySelector('input');
++            var hiddenInput = dropdown.querySelector('input[type="hidden"]');
++            var list = dropdown.querySelectorAll('li');
++            var menu = dropdown.querySelector('.mdl-js-menu');
++            var arrow = dropdown.querySelector('.mdl-icon-toggle__label');
++            var label = '';
++            var previousValue = '';
++            var previousDataVal = '';
++            var opened = false;
++
++            var setSelectedItem = function (li) {
++                var value = li.textContent.trim();
++                input.value = value;
++                list.forEach(function (li) {
++                    li.classList.remove('selected');
++                });
++                li.classList.add('selected');
++                dropdown.MaterialTextfield.change(value); // handles css class changes
++                setTimeout(function () {
++                    dropdown.MaterialTextfield.updateClasses_(); //update css class
++                }, 250);
++
++                // update input with the "id" value
++                hiddenInput.value = li.dataset.val || '';
++
++                previousValue = input.value;
++                previousDataVal = hiddenInput.value;
++
++                if ("createEvent" in document) {
++                    var evt = document.createEvent("HTMLEvents");
++                    evt.initEvent("change", false, true);
++                    menu['MaterialMenu'].hide();
++                    input.dispatchEvent(evt);
++                } else {
++                    input.fireEvent("onchange");
++                }
++            }
++
++            var hideAllMenus = function () {
++                opened = false;
++                input.value = previousValue;
++                hiddenInput.value = previousDataVal;
++                if (!dropdown.querySelector('.mdl-menu__container').classList.contains('is-visible')) {
++                    dropdown.classList.remove('is-focused');
++                }
++                var menus = document.querySelectorAll('.getmdl-select .mdl-js-menu');
++                [].forEach.call(menus, function (menu) {
++                    menu['MaterialMenu'].hide();
++                });
++                var event = new Event('closeSelect');
++                menu.dispatchEvent(event);
++            };
++            document.body.addEventListener('click', hideAllMenus, false);
++
++            //hide previous select after press TAB
++            dropdown.onkeydown = function (event) {
++                if (event.keyCode == 9) {
++                    input.value = previousValue;
++                    hiddenInput.value = previousDataVal;
++                    menu['MaterialMenu'].hide();
++                    dropdown.classList.remove('is-focused');
++                }
++            };
++
++            //show select if it have focus
++            input.onfocus = function (e) {
++                menu['MaterialMenu'].show();
++                menu.focus();
++                opened = true;
++            };
++
++            input.onblur = function (e) {
++                e.stopPropagation();
++            };
++
++            //hide all old opened selects and opening just clicked select
++            input.onclick = function (e) {
++                e.stopPropagation();
++                if (!menu.classList.contains('is-visible')) {
++                    menu['MaterialMenu'].show();
++                    hideAllMenus();
++                    dropdown.classList.add('is-focused');
++                    opened = true;
++                } else {
++                    menu['MaterialMenu'].hide();
++                    opened = false;
++                }
++            };
++
++            input.onkeydown = function (event) {
++                if (event.keyCode == 27) {
++                    input.value = previousValue;
++                    hiddenInput.value = previousDataVal;
++                    menu['MaterialMenu'].hide();
++                    dropdown.MaterialTextfield.onBlur_();
++                    if (label !== '') {
++                        dropdown.querySelector('.mdl-textfield__label').textContent = label;
++                        label = '';
++                    }
++                }
++            };
++
++            menu.addEventListener('closeSelect', function (e) {
++                input.value = previousValue;
++                hiddenInput.value = previousDataVal;
++                dropdown.classList.remove('is-focused');
++                if (label !== '') {
++                    dropdown.querySelector('.mdl-textfield__label').textContent = label;
++                    label = '';
++                }
++            });
++
++            //set previous value and data-val if ESC was pressed
++            menu.onkeydown = function (event) {
++                if (event.keyCode == 27) {
++                    input.value = previousValue;
++                    hiddenInput.value = previousDataVal;
++                    dropdown.classList.remove('is-focused');
++                    if (label !== '') {
++                        dropdown.querySelector('.mdl-textfield__label').textContent = label;
++                        label = '';
++                    }
++                }
++            };
++
++            if (arrow) {
++                arrow.onclick = function (e) {
++                    e.stopPropagation();
++                    if (opened) {
++                        menu['MaterialMenu'].hide();
++                        opened = false;
++                        dropdown.classList.remove('is-focused');
++                        dropdown.MaterialTextfield.onBlur_();
++                        input.value = previousValue;
++                        hiddenInput.value = previousDataVal;
++                    } else {
++                        hideAllMenus();
++                        dropdown.MaterialTextfield.onFocus_();
++                        input.focus();
++                        menu['MaterialMenu'].show();
++                        opened = true;
++                    }
++                };
++            }
++
++            [].forEach.call(list, function (li) {
++                li.onfocus = function () {
++                    dropdown.classList.add('is-focused');
++                    var value = li.textContent.trim();
++                    input.value = value;
++                    if (!dropdown.classList.contains('mdl-textfield--floating-label') && label == '') {
++                        label = dropdown.querySelector('.mdl-textfield__label').textContent.trim();
++                        dropdown.querySelector('.mdl-textfield__label').textContent = '';
++                    }
++                };
++
++                li.onclick = function () {
++                    setSelectedItem(li);
++                };
++
++                if (li.dataset.selected) {
++                    setSelectedItem(li);
++                }
++            });
++        },
++        init: function (selector) {
++            var dropdowns = document.querySelectorAll(selector);
++            [].forEach.call(dropdowns, function (dropdown) {
++                getmdlSelect._addEventListeners(dropdown);
++                componentHandler.upgradeElement(dropdown);
++                componentHandler.upgradeElement(dropdown.querySelector('ul'));
++            });
++        }
++    };
++}
+Index: assets/getmdl-select-master/src/scss/getmdl-select.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/assets/getmdl-select-master/src/scss/getmdl-select.scss b/assets/getmdl-select-master/src/scss/getmdl-select.scss
+new file mode 100644
+--- /dev/null	(date 1527869996000)
++++ b/assets/getmdl-select-master/src/scss/getmdl-select.scss	(date 1527869996000)
+@@ -0,0 +1,44 @@
++.getmdl-select {
++  outline: none;
++  .mdl-textfield__input {
++    cursor: pointer;
++  }
++  .selected {
++    background-color: #ddd;
++  }
++  .mdl-icon-toggle__label {
++    float: right;
++    margin-top: -30px;
++    color: rgba(0, 0, 0, 0.4);
++    transform: rotate(0);
++    transition: transform 0.3s;
++  }
++  &.is-focused {
++    .mdl-icon-toggle__label {
++      color: #3f51b5;
++      transform: rotate(180deg);
++    }
++  }
++
++  .mdl-menu__container {
++    width: 100% !important;
++    margin-top: 2px;
++    .mdl-menu {
++      width: 100%;
++      .mdl-menu__item {
++        font-size: 16px;
++      }
++    }
++  }
++}
++
++.getmdl-select__fix-height {
++  .mdl-menu__container .mdl-menu {
++    overflow-y: auto;
++    max-height: 288px !important;
++  }
++  .mdl-menu.mdl-menu--top-left {
++    bottom: auto;
++    top: 0;
++  }
++}
+\ No newline at end of file
+Index: css/styles.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/**\r\n * Copyright 2015 Google Inc. All Rights Reserved.\r\n *\r\n * Licensed under the Apache License, Version 2.0 (the \"License\");\r\n * you may not use this file except in compliance with the License.\r\n * You may obtain a copy of the License at\r\n *\r\n *      http://www.apache.org/licenses/LICENSE-2.0\r\n *\r\n * Unless required by applicable law or agreed to in writing, software\r\n * distributed under the License is distributed on an \"AS IS\" BASIS,\r\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\n * See the License for the specific language governing permissions and\r\n * limitations under the License.\r\n */\r\n\r\nbody {\r\n  margin: 0;\r\n}\r\n\r\n/* Disable ugly boxes around images in IE10 */\r\na img{\r\n  border: 0px;\r\n}\r\n\r\n::-moz-selection {\r\n  background-color: #e60000;\r\n  color: #fff;\r\n}\r\n\r\n::selection {\r\n  background-color: #e60000;\r\n  color: #fff;\r\n}\r\n\r\n.android-search-box .mdl-textfield__input {\r\n  color: rgba(0, 0, 0, 0.87);\r\n}\r\n\r\n.android-header .mdl-menu__container {\r\n  z-index: 50;\r\n  margin: 0 !important;\r\n}\r\n\r\n\r\n.mdl-textfield--expandable {\r\n  width: auto;\r\n}\r\n\r\n.android-fab {\r\n  position: absolute;\r\n  right: 20%;\r\n  bottom: -26px;\r\n  z-index: 3;\r\n  background: #9b0025 !important;\r\n  color: black !important;\r\n}\r\n\r\n.android-mobile-title {\r\n  display: none !important;\r\n}\r\n\r\n\r\n.android-logo-image {\r\n  /* height: 28px; */\r\n  width: 140px;\r\n}\r\n\r\n\r\n.android-header {\r\n  overflow: visible;\r\n  background-color: #e60000;\r\n}\r\n\r\n.android-header .material-icons {\r\n  color: white !important;\r\n}\r\n\r\n.android-header .mdl-layout__drawer-button {\r\n  background: transparent;\r\n  color: white;\r\n}\r\n\r\n.android-header .mdl-navigation__link {\r\n  color: white;\r\n  font-weight: 700;\r\n  font-size: 14px;\r\n}\r\n\r\n.android-navigation-container {\r\n  /* Simple hack to make the overflow happen to the left instead... */\r\n  direction: rtl;\r\n  -webkit-order: 1;\r\n  -ms-flex-order: 1;\r\n  order: 1;\r\n  width: 500px;\r\n  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),\r\n  width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\r\n}\r\n\r\n.android-navigation {\r\n  /* ... and now make sure the content is actually LTR */\r\n  direction: ltr;\r\n  -webkit-justify-content: flex-end;\r\n  -ms-flex-pack: end;\r\n  justify-content: flex-end;\r\n  width: 800px;\r\n}\r\n\r\n.android-search-box.is-focused + .android-navigation-container {\r\n  opacity: 0;\r\n  width: 100px;\r\n}\r\n\r\n\r\n.android-navigation .mdl-navigation__link {\r\n  display: inline-block;\r\n  height: 60px;\r\n  line-height: 68px;\r\n  background-color: transparent !important;\r\n  border-bottom: 4px solid transparent;\r\n}\r\n\r\n.android-navigation .mdl-navigation__link:hover {\r\n  border-bottom: 4px solid #e60000;\r\n}\r\n\r\n.android-search-box {\r\n  -webkit-order: 2;\r\n  -ms-flex-order: 2;\r\n  order: 2;\r\n  margin-left: 16px;\r\n  margin-right: 16px;\r\n}\r\n\r\n.android-more-button {\r\n  -webkit-order: 3;\r\n  -ms-flex-order: 3;\r\n  order: 3;\r\n}\r\n\r\n\r\n.android-drawer {\r\n  border-right: none;\r\n}\r\n\r\n.android-drawer-separator {\r\n  height: 1px;\r\n  background-color: #dcdcdc;\r\n  margin: 8px 0;\r\n}\r\n\r\n.android-drawer .mdl-navigation__link.mdl-navigation__link {\r\n  font-size: 14px;\r\n  color: #767777;\r\n}\r\n\r\n.android-drawer span.mdl-navigation__link.mdl-navigation__link {\r\n  color: #e60000;\r\n}\r\n\r\n.android-drawer .mdl-layout-title {\r\n  position: relative;\r\n  background: #e60000;\r\n  height: 160px;\r\n}\r\n\r\n.android-drawer .android-logo-image {\r\n  position: absolute;\r\n  bottom: 16px;\r\n}\r\n\r\n.android-be-together-section {\r\n  position: relative;\r\n  height: 800px;\r\n  width: auto;\r\n  background-color: #f3f3f3;\r\n  background: url('images/slide01.jpg') center 30% no-repeat;\r\n  background-size: cover;\r\n}\r\n\r\n.logo-font {\r\n  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;\r\n  line-height: 1;\r\n  color: #767777;\r\n  font-weight: 500;\r\n}\r\n\r\n.android-slogan {\r\n  font-size: 60px;\r\n  padding-top: 160px;\r\n}\r\n\r\n.android-sub-slogan {\r\n  font-size: 21px;\r\n  padding-top: 24px;\r\n}\r\n\r\n.android-create-character {\r\n  font-size: 21px;\r\n  padding-top: 400px;\r\n}\r\n\r\n.android-create-character a {\r\n  text-decoration: none;\r\n  color: #767777;\r\n  font-weight: 300;\r\n}\r\n\r\n.android-screen-section {\r\n  position: relative;\r\n  padding-top: 60px;\r\n  padding-bottom: 80px;\r\n}\r\n\r\n.android-screens {\r\n  text-align: right;\r\n  width: 100%;\r\n  white-space: nowrap;\r\n  overflow-x: auto;\r\n}\r\n\r\n.android-screen {\r\n  text-align: center;\r\n}\r\n\r\n.android-screen .android-link {\r\n  margin-top: 16px;\r\n  display: block;\r\n  z-index: 2;\r\n}\r\n\r\n.android-image-link {\r\n  text-decoration: none;\r\n}\r\n\r\n.android-wear {\r\n  display: inline-block;\r\n  width: 160px;\r\n  margin-right: 32px;\r\n}\r\n\r\n.android-wear .android-screen-image {\r\n  width: 40%;\r\n  z-index: 1;\r\n}\r\n\r\n\r\n.android-phone {\r\n  display: inline-block;\r\n  width: 64px;\r\n  margin-right: 48px;\r\n}\r\n\r\n.android-phone .android-screen-image {\r\n  width: 100%;\r\n  z-index: 1;\r\n}\r\n\r\n\r\n.android-tablet {\r\n  display: inline-block;\r\n  width: 110px;\r\n  margin-right: 64px;\r\n}\r\n\r\n.android-tablet .android-screen-image {\r\n  width: 100%;\r\n  z-index: 1;\r\n}\r\n\r\n.android-tablet .android-link {\r\n  display: block;\r\n  z-index: 2;\r\n}\r\n\r\n\r\n.android-tv {\r\n  display: inline-block;\r\n  width: 300px;\r\n  margin-right: 80px;\r\n}\r\n\r\n.android-tv .android-screen-image {\r\n  width: 100%;\r\n  z-index: 1;\r\n}\r\n\r\n\r\n.android-auto {\r\n  display: inline-block;\r\n  width: 300px;\r\n  overflow: hidden;\r\n}\r\n\r\n.android-auto .android-screen-image {\r\n  display: block;\r\n  height: 300px;\r\n  z-index: 1;\r\n}\r\n\r\n\r\n.android-wear-section {\r\n  position: relative;\r\n  background: url('images/wear.png') center top no-repeat;\r\n  background-size: cover;\r\n  height: 800px;\r\n}\r\n\r\n.android-wear-band {\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  text-align: center;\r\n  background-color: #37474f;\r\n}\r\n\r\n.android-wear-band-text {\r\n  max-width: 800px;\r\n  margin-left: 25%;\r\n  padding: 24px;\r\n  text-align: left;\r\n  color: white;\r\n}\r\n\r\n.android-wear-band-text p {\r\n  padding-top: 8px;\r\n}\r\n\r\n.android-link {\r\n  text-decoration: none;\r\n  color: #e60000 !important;\r\n}\r\n\r\n.android-link:hover {\r\n  color: #e60000 !important;\r\n}\r\n\r\n.android-link .material-icons {\r\n  position: relative;\r\n  top: -1px;\r\n  vertical-align: middle;\r\n}\r\n\r\n.android-alt-link {\r\n  text-decoration: none;\r\n  color: #9b0025 !important;\r\n  font-size: 16px;\r\n}\r\n\r\n.android-alt-link:hover {\r\n  color: #ff405a !important;\r\n}\r\n\r\n.android-alt-link .material-icons {\r\n  position: relative;\r\n  top: 6px;\r\n}\r\n\r\n.android-customized-section {\r\n  text-align: center;\r\n}\r\n\r\n.android-customized-section-text {\r\n  max-width: 500px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  padding: 80px 16px 0 16px;\r\n}\r\n\r\n.android-customized-section-text p {\r\n  padding-top: 16px;\r\n}\r\n\r\n.android-customized-section-image {\r\n  background: url('images/devices.jpg') center top no-repeat;\r\n  background-size: cover;\r\n  height: 400px;\r\n}\r\n\r\n.android-more-section {\r\n  padding: 80px 0;\r\n  max-width: 1044px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n.android-more-section .android-section-title {\r\n  margin-left: 12px;\r\n  padding-bottom: 24px;\r\n}\r\n\r\n.android-card-container {\r\n}\r\n\r\n.android-card-container .mdl-card__media {\r\n  overflow: hidden;\r\n  background: transparent;\r\n}\r\n\r\n.android-card-container .mdl-card__media img {\r\n  width: 100%;\r\n}\r\n\r\n.android-card-container .mdl-card__title {\r\n  background: transparent;\r\n  height: auto;\r\n}\r\n\r\n.android-card-container .mdl-card__title-text {\r\n  color: black;\r\n  height: auto;\r\n}\r\n\r\n.android-card-container .mdl-card__supporting-text {\r\n  height: auto;\r\n  color: black;\r\n  padding-bottom: 56px;\r\n}\r\n\r\n.android-card-container .mdl-card__actions {\r\n  position: absolute;\r\n  bottom: 0;\r\n}\r\n\r\n.android-card-container .mdl-card__actions a {\r\n  border-top: none;\r\n  font-size: 16px;\r\n}\r\n\r\n.android-footer {\r\n  background-color: #fafafa;\r\n  position: relative;\r\n}\r\n\r\n.android-footer a:hover {\r\n  color: #e60000;\r\n}\r\n\r\n.android-footer .mdl-mega-footer--top-section::after {\r\n  border-bottom: none;\r\n}\r\n\r\n.android-footer .mdl-mega-footer--middle-section::after {\r\n  border-bottom: none;\r\n}\r\n\r\n.android-footer .mdl-mega-footer--bottom-section {\r\n  position: relative;\r\n}\r\n\r\n.android-footer .mdl-mega-footer--bottom-section a {\r\n  margin-right: 2em;\r\n}\r\n\r\n.android-footer .mdl-mega-footer--right-section a .material-icons {\r\n  position: relative;\r\n  top: 6px;\r\n}\r\n\r\n.android-link-menu:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n/**** Mobile layout ****/\r\n@media (max-width: 900px) {\r\n  .android-navigation-container {\r\n    display: none;\r\n  }\r\n\r\n  .android-title {\r\n    display: none !important;\r\n  }\r\n\r\n  .android-mobile-title {\r\n    display: block !important;\r\n    position: absolute;\r\n    left: calc(50% - 70px);\r\n    top: 12px;\r\n    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);\r\n  }\r\n\r\n  /* WebViews in iOS 9 break the \"~\" operator, and WebViews in OS X 10.10 break\r\n     consecutive \"+\" operators in some cases. Therefore, we need to use both\r\n     here to cover all the bases. */\r\n  .android.android-search-box.is-focused ~ .android-mobile-title,\r\n  .android-search-box.is-focused + .android-navigation-container + .android-mobile-title {\r\n    opacity: 0;\r\n  }\r\n\r\n  .android-more-button {\r\n    display: none;\r\n  }\r\n\r\n  .android-search-box.is-focused {\r\n    width: calc(100% - 48px);\r\n  }\r\n\r\n  .android-search-box .mdl-textfield__expandable-holder {\r\n    width: 100%;\r\n  }\r\n\r\n  .android-be-together-section {\r\n    height: 350px;\r\n  }\r\n\r\n  .android-slogan {\r\n    font-size: 26px;\r\n    margin: 0 16px;\r\n    padding-top: 24px;\r\n  }\r\n\r\n  .android-sub-slogan {\r\n    font-size: 16px;\r\n    margin: 0 16px;\r\n    padding-top: 8px;\r\n  }\r\n\r\n  .android-create-character {\r\n    padding-top: 200px;\r\n    font-size: 16px;\r\n  }\r\n\r\n  .android-create-character img {\r\n    height: 12px;\r\n  }\r\n\r\n  .android-fab {\r\n    display: none;\r\n  }\r\n\r\n  .android-wear-band-text {\r\n    margin-left: 0;\r\n    padding: 16px;\r\n  }\r\n\r\n  .android-footer .mdl-mega-footer--bottom-section {\r\n    display: none;\r\n  }\r\n}\r\n\r\n.android-content {\r\n  background-color: lightgrey;\r\n}\r\n\r\n.col-center {\r\n  max-width: 1080px;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/css/styles.css b/css/styles.css
+--- a/css/styles.css	(revision b381b2a2a07653aa53467e3ca4427f806ec27771)
++++ b/css/styles.css	(date 1638398414949)
+@@ -540,9 +540,37 @@
+ }
+ 
+ .android-content {
+-  background-color: lightgrey;
++  background-color: #f5f5f5;
+ }
+ 
+ .col-center {
+   max-width: 1080px;
++}
++
++.padding-top-title {
++  font-size: 21px;
++  padding-top: 100px;
++}
++
++.form-title {
++  font-size: 15px;
++}
++
++.map-responsive{
++  overflow:hidden;
++  padding-bottom:56.25%;
++  position:relative;
++  height:0;
++}
++
++.map-responsive iframe{
++  left:0;
++  top:0;
++  height:100%;
++  width:100%;
++  position:absolute;
++}
++
++.margin-bottom-0px {
++  margin-bottom: 0 !important;
+ }
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d2dacc59-3022-4e87-a778-b3840aea68d1\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/ICT602-W6-Mobile-Web-App.iml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/modules.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/contact.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/contact.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/css/color scheme idk.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/css/color scheme idk.txt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/css/styles.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/css/styles.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/index.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"21dYEz7NTtKBjJhMaxoMTKxEw9Q\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d2dacc59-3022-4e87-a778-b3840aea68d1\" name=\"Changes\" comment=\"\" />\r\n      <created>1638272339499</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1638272339499</updated>\r\n      <workItem from=\"1638272363743\" duration=\"2469000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b381b2a2a07653aa53467e3ca4427f806ec27771)
++++ b/.idea/workspace.xml	(date 1638398415288)
+@@ -1,16 +1,22 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="d2dacc59-3022-4e87-a778-b3840aea68d1" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/ICT602-W6-Mobile-Web-App.iml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    <list default="true" id="d2dacc59-3022-4e87-a778-b3840aea68d1" name="Changes" comment="color scheme update">
++      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/LICENSE.txt" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/README.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/bower.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/getmdl-select.min.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/getmdl-select.min.css.map" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/getmdl-select.min.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/getmdl-select.min.js.map" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/gulpfile.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/package.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/src/js/getmdl-select.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/src/scss/getmdl-select.scss" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/css/color scheme idk.txt" beforeDir="false" afterPath="$PROJECT_DIR$/css/color scheme idk.txt" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -36,6 +42,7 @@
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
++    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+     <property name="vue.rearranger.settings.migration" value="true" />
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+@@ -46,8 +53,18 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1638272339499</updated>
+-      <workItem from="1638272363743" duration="2469000" />
++      <workItem from="1638272363743" duration="4357000" />
++      <workItem from="1638321030041" duration="167000" />
++      <workItem from="1638371106569" duration="9268000" />
+     </task>
++    <task id="LOCAL-00001" summary="color scheme update">
++      <created>1638281662588</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1638281662588</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -63,8 +80,11 @@
+         </entry>
+       </map>
+     </option>
++    <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
++    <MESSAGE value="color scheme update" />
++    <option name="LAST_COMMIT_MESSAGE" value="color scheme update" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: assets/getmdl-select-master/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/assets/getmdl-select-master/.gitignore b/assets/getmdl-select-master/.gitignore
+new file mode 100644
+--- /dev/null	(date 1527869996000)
++++ b/assets/getmdl-select-master/.gitignore	(date 1527869996000)
+@@ -0,0 +1,5 @@
++# node modules
++node_modules
++
++# bower components
++bower_components
+\ No newline at end of file
+Index: assets/getmdl-select-master/bower.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/assets/getmdl-select-master/bower.json b/assets/getmdl-select-master/bower.json
+new file mode 100644
+--- /dev/null	(date 1527869996000)
++++ b/assets/getmdl-select-master/bower.json	(date 1527869996000)
+@@ -0,0 +1,45 @@
++{
++  "name": "getmdl-select",
++  "version": "2.0.1",
++  "description": "select component like native mdl menu",
++  "main": [
++    "getmdl-select.min.css",
++    "getmdl-select.min.js"
++  ],
++  "authors": [
++    "CreativeIT"
++  ],
++  "license": "MIT",
++  "keywords": [
++    "material",
++    "mdl",
++    "getmdl",
++    "select",
++    "getmdl-select",
++    "dropdown",
++    "getmdl-dropdown"
++  ],
++  "homepage": "https://github.com/CreativeIT/getmdl-select#readme",
++  "moduleType": [
++    "globals"
++  ],
++  "devDependencies": {
++    "bower": "1.5.2",
++    "gulp": "3.9.0",
++    "gulp-rename": "1.2.2",
++    "gulp-sass": "2.0.4",
++    "gulp-sourcemaps": "1.5.2",
++    "gulp-uglifyjs": "0.6.2",
++    "gulp-babel": "5.3.0"
++  },
++  "dependencies": {
++    "material-design-lite": "1.1.3"
++  },
++  "ignore": [
++    "**/.*",
++    "node_modules",
++    "bower_components",
++    "test",
++    "tests"
++  ]
++}
