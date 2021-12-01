@@ -106,23 +106,24 @@
       	}
       </style>
       <div class="android-content mdl-layout__content">
-        <div class="mdl-typography--text-center">Start Here</div>
-
         <!-- start -->
         <!--<form> -->
 	        <div class="shippingContainer">
+	        	<!--
 	        	<div>
 	        		<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-domestic" >
 				  	<input type="radio" id="option-domestic" class="mdl-radio__button" name="option-shipping" checked="checked"> 
 				  	<span class="mdl-radio__label">Domestic</span>
 					</label>
 	        	</div>
+	        	
 		        <div>
 		        	<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-international">
 				  	<input type="radio" id="option-international" class="mdl-radio__button" name="option-shipping">
 				  	<span class="mdl-radio__label">International</span>
 					</label>
 		        </div>
+		    	-->
 		        <!-- DOMESTIC -->
 				<div class="shippingContainer" id="domesticContainer">
 					<h4 class="title4">Domestic Shipping</h4>
@@ -244,7 +245,7 @@
 								</div>
 							</div>
 							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="addrow('manyTableDom')">ADD</button>
-							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd">CLEAR DETAILS</button>
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="clearParcelFields('manyDom')">CLEAR PARCEL DETAILS</button>
 							<div class="divManyTableDom">
 								<table class="mdl-data-table mdl-js-data-table tableMany" id="manyTableDom">
 						  			<thead>
@@ -262,6 +263,7 @@
 						  			</tbody>
 								</table>
 							</div>
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="clearTable('manyTableDom')">CLEAR TABLE</button>
 						</div>
 
 						<!-- single parcel -->
@@ -322,37 +324,41 @@
 								    <span class="mdl-textfield__error">Input is not a number!</span>
 								</div>
 							</div>
-							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd">CLEAR DETAILS</button>	
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="clearParcelFields('singleDom')">CLEAR PARCEL DETAILS</button>	
 						</div>
 						</div>
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="submitForm()">NEXT</button>
 					</div>
-				</div>
 
-				<!-- INTERNATIONAL -->
-				<div class="shippingContainer" id="internationalContainer"hidden="true">
-					<h4 class="title4">International Shipping</h4>
-					<div>
-						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-multipleInt">
-							<input type="checkbox" id="switch-multipleInt" class="mdl-switch__input" checked>
-							<span class="mdl-switch__label">Multiple Parcels</span>
-						</label>
-					</div>
-					<div id="numParcelIntCont">
-						<div class="mdl-textfield mdl-js-textfield">
-							<label class="mdl-label" for="numParcelInt">Number of Parcels</label>
-						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="numParcelInt">
-						    <span class="mdl-textfield__error">Input is not a number!</span>
-					 	</div>
-					</div>
-					<div>
-						
-					</div>
 				</div>
+				<!--
+					 INTERNATIONAL 
+					<div class="shippingContainer" id="internationalContainer"hidden="true">
+						<h4 class="title4">International Shipping</h4>
+						<div>
+							<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-multipleInt">
+								<input type="checkbox" id="switch-multipleInt" class="mdl-switch__input" checked>
+								<span class="mdl-switch__label">Multiple Parcels</span>
+							</label>
+						</div>
+						<div id="numParcelIntCont">
+							<div class="mdl-textfield mdl-js-textfield">
+								<label class="mdl-label" for="numParcelInt">Number of Parcels</label>
+							    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="numParcelInt">
+							    <span class="mdl-textfield__error">Input is not a number!</span>
+						 	</div>
+						</div>
+						<div>
+							
+						</div>
+					</div>
+				-->
 	        </div>
 		<!--</form> -->
 
 		<!-- temp script -->
 		<script>
+			
 			document.getElementById("switch-multipleDom").addEventListener("change", function(){
 				if(this.checked){
 					//document.getElementById("numParcelDom").disabled = false;
@@ -364,7 +370,8 @@
 					//set value to 1 during submission!
 				}
 			});
-
+			
+			/*
 			document.getElementById("switch-multipleInt").addEventListener("change", function(){
 				if(this.checked){
 					document.getElementById("numParcelInt").disabled = false;
@@ -386,7 +393,7 @@
 				document.getElementById("internationalContainer").hidden = false;
 				document.getElementById("domesticContainer").hidden = true;
 			}
-
+			*/
 			function addrow(targetTable){
 
 				if(document.getElementById("manyDom-parName").value == '' || document.getElementById("manyDom-parVal").value == '' || document.getElementById("manyDom-actWeight").value == '' || document.getElementById("manyDom-length").value == '' || document.getElementById("manyDom-width").value == '' || document.getElementById("manyDom-height").value == ''){
@@ -417,6 +424,15 @@
 
 			}
 
+			function clearTable(targetTable){
+				var table = document.getElementById(targetTable);
+				var n = table.rows.length - 1;	
+				while(n >= 1){
+					table.deleteRow(n);
+					n--;
+				}
+			}
+
 			function calcVolWeight (targetField){
 				if(document.getElementById("singleDom-length").value == '' || document.getElementById("singleDom-width").value == '' || document.getElementById("singleDom-height").value == ''){
 					alert("Please fill every dimension fields in Parcel Details!");
@@ -424,6 +440,22 @@
 				}
 
 				document.getElementById(targetField).value = (document.getElementById("singleDom-length").value * document.getElementById("singleDom-width").value * document.getElementById("singleDom-height").value) / 5000;
+			}
+
+			function clearParcelFields (targetField){
+				document.getElementById(targetField+"-parName").value = '';
+				document.getElementById(targetField+"-parVal").value = '';
+				document.getElementById(targetField+"-actWeight").value = '';
+				document.getElementById(targetField+"-length").value = '';
+				document.getElementById(targetField+"-width").value = '';
+				document.getElementById(targetField+"-height").value = '';
+
+				if(targetField == 'singleDom' || targetField == 'singleInt')
+					document.getElementById(targetField+"-volWeight").value = '';
+			}
+
+			function submitForm (){
+				alert("Requires back end dev!");
 			}
 		</script>
 		<!-- end -->
