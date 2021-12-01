@@ -171,9 +171,11 @@
             </div>
           </div>
           <div class="mdl-cell mdl-cell--12-col mdl-typography--text-center">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-              Send
-            </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="button1">Send</button>
+            <div id="toast1" class="mdl-js-snackbar mdl-snackbar">
+              <div class="mdl-snackbar__text"></div>
+              <button class="mdl-snackbar__action" type="button"></button>
+            </div>
           </div>
         </div>
         <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop">
@@ -195,6 +197,19 @@
     </div>
   </div>
 </div>
+<script>
+  (function() {
+    'use strict';
+    window['counter'] = 0;
+    var snackbarContainer = document.querySelector('#toast1');
+    var showToastButton = document.querySelector('#button1');
+    showToastButton.addEventListener('click', function() {
+      'use strict';
+      var data = {message: 'Form submitted'};
+      snackbarContainer.MaterialSnackbar.showSnackbar(data);
+    });
+  }());
+</script>
 <!-- <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-color&#45;&#45;accent mdl-color-text&#45;&#45;accent-contrast">View Source</a> -->
 </body>
 </html>
