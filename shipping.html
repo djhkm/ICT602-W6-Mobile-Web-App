@@ -60,17 +60,7 @@
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-            <!-- <img class="android-logo-image" src="images/logo.png"> -->
           </span>
-          <!-- <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">5.0 Lollipop</li>
-            <li class="mdl-menu__item">4.4 KitKat</li>
-            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-            <li class="mdl-menu__item">Android History</li>
-          </ul> -->
         </div>
       </div>
 
@@ -86,11 +76,141 @@
           <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contact.html">Contact</a>
         </nav>
       </div>
+      <!-- temp styles -->
+      <style type="text/css">
+      	.shippingContainer{
+      		margin: 25px 20px;	
+      	}
 
+      	.shippingRadio{
+      		vertical-align: middle;
+      	}
+
+      	.inputContainer{
+      		margin-top: 10px;
+      	}
+
+      	.title4{
+      		border-bottom-style: solid;
+      		border-bottom-color: #FF0000;
+      	}
+      </style>
       <div class="android-content mdl-layout__content">
         <div class="mdl-typography--text-center">Start Here</div>
+
+        <!-- start -->
+        <form>
+	        <div class="shippingContainer">
+	        	<div>
+	        		<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-domestic" >
+				  	<input type="radio" id="option-domestic" class="mdl-radio__button" name="option-shipping" checked="checked"> 
+				  	<span class="mdl-radio__label">Domestic</span>
+					</label>
+	        	</div>
+		        <div>
+		        	<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-international">
+				  	<input type="radio" id="option-international" class="mdl-radio__button" name="option-shipping">
+				  	<span class="mdl-radio__label">International</span>
+					</label>
+		        </div>
+		        <!-- DOMESTIC -->
+				<div class="shippingContainer" id="domesticContainer">
+					<h4 class="title4">Domestic Shipping</h4>
+					<div>
+						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-multipleDom">
+							<input type="checkbox" id="switch-multipleDom" class="mdl-switch__input" checked>
+							<span class="mdl-switch__label">Multiple Parcels</span>
+						</label>
+					</div>
+					<div id="numParcelDomCont">
+						<div class="mdl-textfield mdl-js-textfield">
+							<label class="mdl-label" for="numParcelDom">Number of Parcels</label>
+						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="numParcelDom">
+						    <span class="mdl-textfield__error">Input is not a number!</span>
+						</div>
+					</div>
+					<div>
+						<h5>Sender Details</h5>
+						<div class="inputContainer">
+							<label class="mdl-label" for="senderNameDom">Name</label>
+							<input class="mdl-textfield__input" type="text" id="senderNameDom">
+						</div>
+						<div class="inputContainer">
+							<label class="mdl-label" for="senderPhoneDom">Phone Number</label>
+							<input class="mdl-textfield__input" type="text" id="senderPhoneDom">
+						</div>
+						<div class="inputContainer">
+							<label class="mdl-label" for="senderAddressDom">Address</label>
+							 <textarea class="mdl-textfield__input" type="text" rows= "3" id="senderAddressDom" ></textarea>
+						</div>
+
+						
+					</div>
+				</div>
+				<!-- INTERNATIONAL -->
+				<div class="shippingContainer" id="internationalContainer"hidden="true">
+					<h4 class="title4">International Shipping</h4>
+					<div>
+						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-multipleInt">
+							<input type="checkbox" id="switch-multipleInt" class="mdl-switch__input" checked>
+							<span class="mdl-switch__label">Multiple Parcels</span>
+						</label>
+					</div>
+					<div id="numParcelIntCont">
+						<div class="mdl-textfield mdl-js-textfield">
+							<label class="mdl-label" for="numParcelInt">Number of Parcels</label>
+						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="numParcelInt">
+						    <span class="mdl-textfield__error">Input is not a number!</span>
+					 	</div>
+					</div>
+					<div>
+						
+					</div>
+				</div>
+	        </div>
+		</form>
+
+		<!-- temp script -->
+		<script>
+			document.getElementById("switch-multipleDom").addEventListener("change", function(){
+				if(this.checked){
+					document.getElementById("numParcelDom").disabled = false;
+					document.getElementById("numParcelDomCont").hidden = false;
+				}else{
+					document.getElementById("numParcelDom").disabled = true;
+					document.getElementById("numParcelDom").value = null;
+					document.getElementById("numParcelDomCont").hidden = true;
+					//set value to 1 during submission!
+				}
+			});
+
+			document.getElementById("switch-multipleInt").addEventListener("change", function(){
+				if(this.checked){
+					document.getElementById("numParcelInt").disabled = false;
+					document.getElementById("numParcelIntCont").hidden = false;
+				}else{
+					document.getElementById("numParcelInt").disabled = true;
+					document.getElementById("numParcelInt").value = null;
+					document.getElementById("numParcelIntCont").hidden = true;
+					//set value to 1 during submission!
+				}
+			});
+
+			document.getElementById("option-domestic").onclick = function(){
+				document.getElementById("domesticContainer").hidden = false;
+				document.getElementById("internationalContainer").hidden = true;
+			}
+
+			document.getElementById("option-international").onclick = function(){
+				document.getElementById("internationalContainer").hidden = false;
+				document.getElementById("domesticContainer").hidden = true;
+			}
+
+		</script>
+		<!-- end -->
+
+
       </div>
     </div>
-    <!-- <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a> -->
   </body>
 </html>
