@@ -29,6 +29,8 @@
   <!-- Additional CSS and JS start here-->
   <link href="css/example.css">
   <script src="js/example.js"></script>
+  <link rel="stylesheet" href="assets/getmdl-select-master/getmdl-select.min.css">
+  <script src="assets/getmdl-select-master/getmdl-select.min.js"></script>
   <!-- Additional CSS and JS end here-->
 </head>
 <body>
@@ -88,9 +90,107 @@
   </div>
 
   <div class="android-content mdl-layout__content">
-    <div class="mdl-grid col-center">
-      <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col">
-        <div class="mdl-typography--text-center">Start Here</div>
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--12-col mdl-typography--text-center mdl-typography--text-uppercase padding-top-title">Contact Us</div>
+      <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop mdl-grid">
+          <div class="mdl-cell mdl-cell--12-col">
+            <div class="form-title">Reason for Contact</div>
+            <div class="mdl-textfield mdl-js-textfield getmdl-select mdl-textfield--full-width">
+              <input type="text" value="" class="mdl-textfield__input" id="input1" readonly>
+              <input type="hidden" value="" name="input1">
+              <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+              <label for="input1" class="mdl-textfield__label"></label>
+              <ul for="input1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                <li class="mdl-menu__item" data-val="GI" data-selected="true">General Inquiries</li>
+                <li class="mdl-menu__item" data-val="SP">Delivery Problem</li>
+                <li class="mdl-menu__item" data-val="DP">Dispatcher Problem</li>
+                <li class="mdl-menu__item" data-val="IP">Item Problem</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop">
+            <div class="form-title">Name</div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
+              <input class="mdl-textfield__input" type="text" id="input2">
+              <label class="mdl-textfield__label" for="input2"></label>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop">
+            <div class="form-title">Email</div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
+              <input class="mdl-textfield__input" type="email" id="input3">
+              <label class="mdl-textfield__label" for="input3"></label>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop">
+            <div class="form-title">Phone</div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
+              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="input4">
+              <label class="mdl-textfield__label" for="input4"></label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop">
+            <div class="form-title">Phone (Home)</div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
+              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="input5">
+              <label class="mdl-textfield__label" for="input5"></label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+              <div class="mdl-typography--text-right">
+                <small>optional</small>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col">
+            <div class="form-title">Tracking Number</div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
+              <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z,0-9]*" id="input6">
+              <label class="mdl-textfield__label" for="input6"></label>
+              <span class="mdl-textfield__error">Input is not an alphanumeric!</span>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col">
+            <div class="form-title">Complainer</div>
+            <div class="mdl-textfield mdl-js-textfield getmdl-select mdl-textfield--full-width">
+              <input type="text" value="" class="mdl-textfield__input" id="input7" readonly>
+              <input type="hidden" value="" name="input7">
+              <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+              <label for="input7" class="mdl-textfield__label"></label>
+              <ul for="input7" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                <li class="mdl-menu__item" data-val="R" data-selected="true">Receiver</li>
+                <li class="mdl-menu__item" data-val="S">Sender</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col">
+            <div class="form-title">Message</div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
+              <textarea class="mdl-textfield__input" type="text" rows= "5" id="input8"></textarea>
+              <label class="mdl-textfield__label" for="input8"></label>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col mdl-typography--text-center">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+              Send
+            </button>
+          </div>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop">
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.002462406747!2d103.16271411526019!3d5.262271337996153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b7bef3b0ba24a9%3A0xc32efb50bc0e5e31!2sUiTM%20Kampus%20Kuala%20Terengganu!5e0!3m2!1sen!2smy!4v1638396207178!5m2!1sen!2smy" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <br>
+          <h5>UiTM Kampus Kuala Terengganu</h5>
+          <br>
+          <b class="form-title">Office Address: </b>
+          <p class="margin-bottom-0px">UiTM Kampus Kuala Terengganu</p>
+          <p>21080 Kuala Terengganu, Terengganu</p>
+          <b class="form-title">Operating Hours: </b>
+          <p class="margin-bottom-0px">8.00 a.m - 5.00 p.m (Sunday-Thursday)</p>
+          <p class="margin-bottom-0px">8.00 a.m - 12.00 p.m (Friday)</p>
+          <p>Closed (Saturday)</p>
+        </div>
       </div>
     </div>
   </div>

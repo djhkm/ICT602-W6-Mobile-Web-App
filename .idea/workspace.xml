@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2dacc59-3022-4e87-a778-b3840aea68d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ICT602-W6-Mobile-Web-App.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d2dacc59-3022-4e87-a778-b3840aea68d1" name="Changes" comment="add new plugin, update style, update contact us page">
+      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/getmdl-select.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/getmdl-select.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/getmdl-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/getmdl-select.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/src/js/getmdl-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/getmdl-select-master/src/scss/getmdl-select.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/color scheme idk.txt" beforeDir="false" afterPath="$PROJECT_DIR$/css/color scheme idk.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -46,8 +53,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638272339499</updated>
-      <workItem from="1638272363743" duration="2469000" />
+      <workItem from="1638272363743" duration="4357000" />
+      <workItem from="1638321030041" duration="167000" />
+      <workItem from="1638371106569" duration="9573000" />
     </task>
+    <task id="LOCAL-00001" summary="color scheme update">
+      <created>1638281662588</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638281662588</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -63,8 +80,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="color scheme update" />
+    <MESSAGE value="add new plugin, update style, update contact us page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new plugin, update style, update contact us page" />
   </component>
 </project>
