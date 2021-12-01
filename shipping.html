@@ -94,6 +94,20 @@
       		border-bottom-style: solid;
       		border-bottom-color: #FF0000;
       	}
+
+      	.title5{
+      		border-left-style: solid;
+      		border-left-color: #FF0000;
+      		padding-left: 5px;
+      	}
+
+      	.parcelDiv{
+      		overflow-x: scroll;
+      	}
+
+      	textarea{
+      		resize: none;
+      	}
       </style>
       <div class="android-content mdl-layout__content">
         <div class="mdl-typography--text-center">Start Here</div>
@@ -130,7 +144,7 @@
 						</div>
 					</div>
 					<div>
-						<h5>Sender Details</h5>
+						<h5 class="title5">Sender Details</h5>
 						<div class="inputContainer">
 							<label class="mdl-label" for="senderNameDom">Name</label>
 							<input class="mdl-textfield__input" type="text" id="senderNameDom">
@@ -143,8 +157,56 @@
 							<label class="mdl-label" for="senderAddressDom">Address</label>
 							 <textarea class="mdl-textfield__input" type="text" rows= "3" id="senderAddressDom" ></textarea>
 						</div>
-
-						
+						<div class="inputContainer">
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-homeSenDom">
+								<input type="checkbox" id="checkbox-homeSenDom" class="mdl-checkbox__input" checked>
+								<span class="mdl-checkbox__label">This is a home address</span>
+							</label>
+						</div>	
+					</div>
+					<div>
+						<h5 class="title5">Receiver Details</h5>
+						<div class="inputContainer">
+							<label class="mdl-label" for="senderNameDom">Name</label>
+							<input class="mdl-textfield__input" type="text" id="receiverNameDom">
+						</div>
+						<div class="inputContainer">
+							<label class="mdl-label" for="senderPhoneDom">Phone Number</label>
+							<input class="mdl-textfield__input" type="text" id="receiverPhoneDom">
+						</div>
+						<div class="inputContainer">
+							<label class="mdl-label" for="senderAddressDom">Address</label>
+							 <textarea class="mdl-textfield__input" type="text" rows= "3" id="receiverAddressDom" ></textarea>
+						</div>
+						<div class="inputContainer">
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-homeRecDom">
+								<input type="checkbox" id="checkbox-homeRecDom" class="mdl-checkbox__input" checked>
+								<span class="mdl-checkbox__label">This is a home address</span>
+							</label>
+						</div>	
+					</div>
+					<div>
+						<h5 class="title5">Parcel Details</h5>
+						<div class="parcelDiv">
+							<table class="mdl-data-table mdl-js-data-table">
+					  			<thead>
+								    <tr>
+								      <th class="mdl-data-table__cell--non-numeric">Name</th>
+								      <th class="mdl-data-table__cell--non-numeric">Nickname</th>
+								      <th>Age</th>
+								      <th class="mdl-data-table__cell--non-numeric">Living?</th>
+								    </tr>
+					  			</thead>
+					  			<tbody>
+								    <tr>
+								      <td class="mdl-data-table__cell--non-numeric">John Lennon</td>
+								      <td class="mdl-data-table__cell--non-numeric">The smart one</td>
+								      <td>40</td>
+								      <td class="mdl-data-table__cell--non-numeric">No</td>
+								    </tr>
+					  			</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 				<!-- INTERNATIONAL -->
