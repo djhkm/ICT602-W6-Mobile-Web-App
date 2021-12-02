@@ -1,4 +1,4 @@
-document.getElementById("switch-multipleDom").addEventListener("change", function(){
+			document.getElementById("switch-multipleDom").addEventListener("change", function(){
 				if(this.checked){
 					//document.getElementById("numParcelDom").disabled = false;
 					document.getElementById("manyParcelDivDom").hidden = false;

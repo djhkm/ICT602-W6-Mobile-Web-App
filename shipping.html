@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="assets/mdl/material.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
+	    #view-source {
+	      position: fixed;
+	      display: block;
+	      right: 0;
+	      bottom: 0;
+	      margin-right: 40px;
+	      margin-bottom: 40px;
+	      z-index: 900;
+	    }
     </style>
     <script src="assets/mdl/material.min.js"></script>
     
@@ -68,9 +68,9 @@
 				</nav>
 			</div>
 
-		<!-- linking css & js -->
+		<!-- linking css  -->
       	<link rel="stylesheet" type="text/css" href="css/shipping.css">
-      	<script type="text/javascript" src="js/shipping.js"></script>
+      	
       	
       	<div class="android-content mdl-layout__content">
         <!-- start -->
@@ -93,209 +93,211 @@
 		    	-->
 		        <!-- DOMESTIC -->
 				<div class="shippingContainer" id="domesticContainer">
+					<div id="container">
 					<h4 class="title4">Domestic Shipping</h4>
-					<div>
-						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-multipleDom">
-							<input type="checkbox" id="switch-multipleDom" class="mdl-switch__input" checked>
-							<span class="mdl-switch__label">Multiple Parcels</span>
-						</label>
-					</div>
-					<div>
-						<h5 class="title5">Sender Details<i class="titleIcons"><span class="material-icons">flight_takeoff</span></i></h5>
-						<div class="inputContainer">
-							<label class="mdl-label" for="senderNameDom">Name</label>
-							<div class="mdl-textfield mdl-js-textfield">
-    							<input class="mdl-textfield__input" type="text" id="senderNameDom">
-    							<label class="mdl-textfield__label" for="senderNameDom"></label>
-  							</div>
-						</div>
-						<div class="inputContainer">
-							<label class="mdl-label" for="senderPhoneDom">Phone Number</label>
-							<div class="mdl-textfield mdl-js-textfield">
-    							<input class="mdl-textfield__input" type="text" id="senderPhoneDom">
-    							<label class="mdl-textfield__label" for="senderPhoneDom"></label>
-  							</div>
-						</div>
-						<div class="inputContainer">
-							<label class="mdl-label" for="senderAddressDom">Address</label>
-							<div class="mdl-textfield mdl-js-textfield">
-							    <textarea class="mdl-textfield__input" type="text" rows= "3" id="senderAddressDom" ></textarea>
-							    <label class="mdl-textfield__label" for="senderAddressDom"></label>
-							</div>
-						</div>
-						<div class="inputContainer">
-							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="chk-homeSenderDom">
-								<input type="checkbox" id="chk-homeSenderDom" class="mdl-checkbox__input" checked>
-								<span class="mdl-checkbox__label">This is a home address</span>
+						<div>
+							<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-multipleDom">
+								<input type="checkbox" id="switch-multipleDom" class="mdl-switch__input" checked>
+								<span class="mdl-switch__label">Multiple Parcels</span>
 							</label>
 						</div>
-					</div>
-					<div>
-						<h5 class="title5">Receiver Details<i class="titleIcons"><span class="material-icons">flight_land</span></i></h5>
-						<div class="inputContainer">
-							<label class="mdl-label" for="receiverNameDom">Name</label>
-							<div class="mdl-textfield mdl-js-textfield">
-    							<input class="mdl-textfield__input" type="text" id="receiverNameDom">
-    							<label class="mdl-textfield__label" for="receiverNameDom"></label>
-  							</div>
+						<div>
+							<h5 class="title5">Sender Details<i class="titleIcons"><span class="material-icons">flight_takeoff</span></i></h5>
+							<div class="inputContainer">
+								<label class="mdl-label" for="senderNameDom">Name</label><br>
+								<div class="mdl-textfield mdl-js-textfield">
+	    							<input class="mdl-textfield__input" type="text" id="senderNameDom">
+	    							<label class="mdl-textfield__label" for="senderNameDom"></label>
+	  							</div>
+							</div>
+							<div class="inputContainer">
+								<label class="mdl-label" for="senderPhoneDom">Phone Number</label><br>
+								<div class="mdl-textfield mdl-js-textfield">
+	    							<input class="mdl-textfield__input" type="text" id="senderPhoneDom">
+	    							<label class="mdl-textfield__label" for="senderPhoneDom"></label>
+	  							</div>
+							</div>
+							<div class="inputContainer">
+								<label class="mdl-label" for="senderAddressDom">Address</label><br>
+								<div class="mdl-textfield mdl-js-textfield">
+								    <textarea class="mdl-textfield__input" type="text" rows= "3" id="senderAddressDom" ></textarea>
+								    <label class="mdl-textfield__label" for="senderAddressDom"></label>
+								</div>
+							</div>
+							<div class="inputContainer">
+								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="chk-homeSenderDom">
+									<input type="checkbox" id="chk-homeSenderDom" class="mdl-checkbox__input" checked>
+									<span class="mdl-checkbox__label">This is a home address</span>
+								</label>
+							</div>
 						</div>
-						<div class="inputContainer">
-							<label class="mdl-label" for="receiverPhoneDom">Phone Number</label>
-							<div class="mdl-textfield mdl-js-textfield">
-    							<input class="mdl-textfield__input" type="text" id="receiverPhoneDom">
-    							<label class="mdl-textfield__label" for="receiverPhoneDom"></label>
-  							</div>
+						<div>
+							<h5 class="title5">Receiver Details<i class="titleIcons"><span class="material-icons">flight_land</span></i></h5>
+							<div class="inputContainer">
+								<label class="mdl-label" for="receiverNameDom">Name</label><br>
+								<div class="mdl-textfield mdl-js-textfield">
+	    							<input class="mdl-textfield__input" type="text" id="receiverNameDom">
+	    							<label class="mdl-textfield__label" for="receiverNameDom"></label>
+	  							</div>
+							</div>
+							<div class="inputContainer">
+								<label class="mdl-label" for="receiverPhoneDom">Phone Number</label><br>
+								<div class="mdl-textfield mdl-js-textfield">
+	    							<input class="mdl-textfield__input" type="text" id="receiverPhoneDom">
+	    							<label class="mdl-textfield__label" for="receiverPhoneDom"></label>
+	  							</div>
+							</div>
+							<div class="inputContainer">
+								<label class="mdl-label" for="receiverAddressDom">Address</label><br>
+								<div class="mdl-textfield mdl-js-textfield">
+								    <textarea class="mdl-textfield__input" type="text" rows= "3" id="receiverAddressDom" ></textarea>
+								    <label class="mdl-textfield__label" for="receiverAddressDom"></label>
+								</div>
+							</div>
+							<div class="inputContainer">
+								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="chk-homeReceiverDom">
+									<input type="checkbox" id="chk-homeReceiverDom" class="mdl-checkbox__input" checked>
+									<span class="mdl-checkbox__label">This is a home address</span>
+								</label>
+							</div>	
 						</div>
-						<div class="inputContainer">
-							<label class="mdl-label" for="receiverAddressDom">Address</label>
-							<div class="mdl-textfield mdl-js-textfield">
-							    <textarea class="mdl-textfield__input" type="text" rows= "3" id="receiverAddressDom" ></textarea>
-							    <label class="mdl-textfield__label" for="receiverAddressDom"></label>
-							</div>
-						</div>
-						<div class="inputContainer">
-							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="chk-homeReceiverDom">
-								<input type="checkbox" id="chk-homeReceiverDom" class="mdl-checkbox__input" checked>
-								<span class="mdl-checkbox__label">This is a home address</span>
-							</label>
-						</div>	
-					</div>
-					<div>
-						<h5 class="title5">Parcel Details<i><span class="material-icons titleIcons">grid_view</span></i></h5>
-						<!-- many parcels -->
-					<div id="manyParcelDivDom">
-						<div class="inputContainer">
-								<label class="mdl-label" for="manyDom-parName">Parcel Name</label>	
-								<div class="mdl-textfield mdl-js-textfield">
-								    <input class="mdl-textfield__input" type="text" id="manyDom-parName">
-								    <label class="mdl-textfield__label" for="manyDom-parName"></label>
+						<div>
+							<h5 class="title5">Parcel Details<i><span class="material-icons titleIcons">grid_view</span></i></h5>
+							<!-- many parcels -->
+						<div id="manyParcelDivDom">
+							<div class="inputContainer dimensionInput">
+									<label class="mdl-label" for="manyDom-parName">Parcel Name:</label>	
+									<div class="mdl-textfield mdl-js-textfield">
+									    <input class="mdl-textfield__input" type="text" id="manyDom-parName">
+									    <label class="mdl-textfield__label" for="manyDom-parName"></label>
+									</div>
 								</div>
-							</div>
-							<div class="inputContainer">
-								<label class="mdl-label" for="manyDom-parVal">Value (RM)</label>
-								<div class="mdl-textfield mdl-js-textfield">
-								    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="manyDom-parVal">
-								    <label class="mdl-textfield__label" for="manyDom-parVal"></label>
-								    <span class="mdl-textfield__error">Input is not a number!</span>
+								<div class="inputContainer dimensionInput">
+									<label class="mdl-label" for="manyDom-parVal">Value (RM):</label>
+									<div class="mdl-textfield mdl-js-textfield">
+									    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="manyDom-parVal">
+									    <label class="mdl-textfield__label" for="manyDom-parVal"></label>
+									    <span class="mdl-textfield__error">Input is not a number!</span>
+									</div>
 								</div>
-							</div>
-							<div class="inputContainer">
-								<label class="mdl-label" for="manyDom-actWeight">Actual Weight (KG)</label>
-								<div class="mdl-textfield mdl-js-textfield">
-								    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="manyDom-actWeight">
-								    <label class="mdl-textfield__label" for="manyDom-actWeight"></label>
-								    <span class="mdl-textfield__error">Input is not a number!</span>
+								<div class="inputContainer">
+									<label class="mdl-label" for="manyDom-actWeight">Actual Weight (KG):</label>
+									<div class="mdl-textfield mdl-js-textfield">
+									    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="manyDom-actWeight">
+									    <label class="mdl-textfield__label" for="manyDom-actWeight"></label>
+									    <span class="mdl-textfield__error">Input is not a number!</span>
+									</div>
 								</div>
-							</div>
-							<div class="inputContainer">
-								<label class="mdl-label" for="manyDom-length">Length (CM)</label>
-								<div class="mdl-textfield mdl-js-textfield">
-								    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="manyDom-length">
-								    <label class="mdl-textfield__label" for="manyDom-length"></label>
-								    <span class="mdl-textfield__error">Input is not a number!</span>
+								<div class="inputContainer dimensionInput">
+									<label class="mdl-label" for="manyDom-length">Length (CM):</label>
+									<div class="mdl-textfield mdl-js-textfield inputBox">
+									    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="manyDom-length">
+									    <label class="mdl-textfield__label" for="manyDom-length"></label>
+									    <span class="mdl-textfield__error">Input is not a number!</span>
+									</div>
 								</div>
-							</div>
-							<div class="inputContainer">
-								<label class="mdl-label" for="manyDom-width">Width (CM)</label>
-								<div class="mdl-textfield mdl-js-textfield">
-								    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="manyDom-width">
-								    <label class="mdl-textfield__label" for="manyDom-width"></label>
-								    <span class="mdl-textfield__error">Input is not a number!</span>
+								<div class="inputContainer dimensionInput">
+									<label class="mdl-label" for="manyDom-width">Width (CM):</label>
+									<div class="mdl-textfield mdl-js-textfield inputBox">
+									    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="manyDom-width">
+									    <label class="mdl-textfield__label" for="manyDom-width"></label>
+									    <span class="mdl-textfield__error">Input is not a number!</span>
+									</div>
 								</div>
-							</div>
-							<div class="inputContainer">
-								<label class="mdl-label" for="manyDom-height">Height (CM)</label>
-								<div class="mdl-textfield mdl-js-textfield">
-								    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="manyDom-height">
-								    <label class="mdl-textfield__label" for="manyDom-height"></label>
-								    <span class="mdl-textfield__error">Input is not a number!</span>
+								<div class="inputContainer dimensionInput">
+									<label class="mdl-label" for="manyDom-height">Height (CM):</label>
+									<div class="mdl-textfield mdl-js-textfield inputBox">
+									    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="manyDom-height">
+									    <label class="mdl-textfield__label" for="manyDom-height"></label>
+									    <span class="mdl-textfield__error">Input is not a number!</span>
+									</div>
+								</div><br>
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="addrow('manyTableDom')"><i><span class="material-icons">add_circle_outline</span></i>ADD</button>
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="clearParcelFields('manyDom')"><i><span class="material-icons">clear</span></i>CLEAR PARCEL DETAILS</button>
+								<div class="divManyTableDom">
+									<table class="mdl-data-table mdl-js-data-table tableMany" id="manyTableDom">
+							  			<thead>
+										    <tr>
+										      <th class="mdl-data-table__cell--non-numeric">Parcel Name</th>
+										      <th class="mdl-data-table__cell--non-numeric">Value (RM)</th>
+										      <th class="mdl-data-table__cell--non-numeric">Actual Weight (KG)</th>
+										      <th class="mdl-data-table__cell--non-numeric">Length (CM)</th>
+										      <th class="mdl-data-table__cell--non-numeric">Width (CM)</th>
+										      <th class="mdl-data-table__cell--non-numeric">Height (CM)</th>
+										      <th class="mdl-data-table__cell--non-numeric">Volumetric Weight (KG)</th>
+										    </tr>
+							  			</thead>
+							  			<tbody>
+							  			</tbody>
+									</table>
 								</div>
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="clearTable('manyTableDom')"><i><span class="material-icons">delete_sweep</span></i>CLEAR TABLE</button>
 							</div>
-							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="addrow('manyTableDom')"><i><span class="material-icons">add_circle_outline</span></i>ADD</button>
-							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="clearParcelFields('manyDom')"><i><span class="material-icons">clear</span></i>CLEAR PARCEL DETAILS</button>
-							<div class="divManyTableDom">
-								<table class="mdl-data-table mdl-js-data-table tableMany" id="manyTableDom">
-						  			<thead>
-									    <tr>
-									      <th class="mdl-data-table__cell--non-numeric">Parcel Name</th>
-									      <th class="mdl-data-table__cell--non-numeric">Value (RM)</th>
-									      <th class="mdl-data-table__cell--non-numeric">Actual Weight (KG)</th>
-									      <th class="mdl-data-table__cell--non-numeric">Length (CM)</th>
-									      <th class="mdl-data-table__cell--non-numeric">Width (CM)</th>
-									      <th class="mdl-data-table__cell--non-numeric">Height (CM)</th>
-									      <th class="mdl-data-table__cell--non-numeric">Volumetric Weight (KG)</th>
-									    </tr>
-						  			</thead>
-						  			<tbody>
-						  			</tbody>
-								</table>
-							</div>
-							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="clearTable('manyTableDom')"><i><span class="material-icons">delete_sweep</span></i>CLEAR TABLE</button>
-						</div>
 
-						<!-- single parcel -->
-						<div id="singleParcelDivDom" hidden="true">
-							<div class="inputContainer">
-								<label class="mdl-label" for="singleDom-parName">Parcel Name</label>	
-								<div class="mdl-textfield mdl-js-textfield">
-								    <input class="mdl-textfield__input" type="text" id="singleDom-parName">
-								    <label class="mdl-textfield__label" for="singleDom-parName"></label>
+							<!-- single parcel -->
+							<div id="singleParcelDivDom" hidden="true">
+								<div class="inputContainer">
+									<label class="mdl-label" for="singleDom-parName">Parcel Name</label>	
+									<div class="mdl-textfield mdl-js-textfield">
+									    <input class="mdl-textfield__input" type="text" id="singleDom-parName">
+									    <label class="mdl-textfield__label" for="singleDom-parName"></label>
+									</div>
 								</div>
-							</div>
-							<div class="inputContainer">
-								<label class="mdl-label" for="singleDom-parVal">Value (RM)</label>
-								<div class="mdl-textfield mdl-js-textfield">
-								    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-parVal">
-								    <label class="mdl-textfield__label" for="singleDom-parVal"></label>
-								    <span class="mdl-textfield__error">Input is not a number!</span>
+								<div class="inputContainer">
+									<label class="mdl-label" for="singleDom-parVal">Value (RM)</label>
+									<div class="mdl-textfield mdl-js-textfield">
+									    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-parVal">
+									    <label class="mdl-textfield__label" for="singleDom-parVal"></label>
+									    <span class="mdl-textfield__error">Input is not a number!</span>
+									</div>
 								</div>
-							</div>
-							<div class="inputContainer">
-								<label class="mdl-label" for="singleDom-actWeight">Actual Weight (KG)</label>
-								<div class="mdl-textfield mdl-js-textfield">
-								    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-actWeight">
-								    <label class="mdl-textfield__label" for="singleDom-actWeight"></label>
-								    <span class="mdl-textfield__error">Input is not a number!</span>
+								<div class="inputContainer">
+									<label class="mdl-label" for="singleDom-actWeight">Actual Weight (KG)</label>
+									<div class="mdl-textfield mdl-js-textfield">
+									    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-actWeight">
+									    <label class="mdl-textfield__label" for="singleDom-actWeight"></label>
+									    <span class="mdl-textfield__error">Input is not a number!</span>
+									</div>
 								</div>
-							</div>
-							<div class="inputContainer">
-								<label class="mdl-label" for="singleDom-length">Length (CM)</label>
-								<div class="mdl-textfield mdl-js-textfield">
-								    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-length">
-								    <label class="mdl-textfield__label" for="singleDom-length"></label>
-								    <span class="mdl-textfield__error">Input is not a number!</span>
+								<div class="inputContainer dimensionInput">
+									<label class="mdl-label" for="singleDom-length">Length (CM):</label>
+									<div class="mdl-textfield mdl-js-textfield inputBox">
+									    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-length">
+									    <label class="mdl-textfield__label" for="singleDom-length"></label>
+									    <span class="mdl-textfield__error">Input is not a number!</span>
+									</div>
 								</div>
-							</div>
-							<div class="inputContainer">
-								<label class="mdl-label" for="singleDom-width">Width (CM)</label>
-								<div class="mdl-textfield mdl-js-textfield">
-								    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-width">
-								    <label class="mdl-textfield__label" for="singleDom-width"></label>
-								    <span class="mdl-textfield__error">Input is not a number!</span>
+								<div class="inputContainer dimensionInput">
+									<label class="mdl-label" for="singleDom-width">Width (CM):</label>
+									<div class="mdl-textfield mdl-js-textfield inputBox">
+									    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-width">
+									    <label class="mdl-textfield__label" for="singleDom-width"></label>
+									    <span class="mdl-textfield__error">Input is not a number!</span>
+									</div>
 								</div>
-							</div>
-							<div class="inputContainer">
-								<label class="mdl-label" for="singleDom-height">Height (CM)</label>
-								<div class="mdl-textfield mdl-js-textfield">
-								    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-height">
-								    <label class="mdl-textfield__label" for="singleDom-height"></label>
-								    <span class="mdl-textfield__error">Input is not a number!</span>
+								<div class="inputContainer dimensionInput">
+									<label class="mdl-label" for="singleDom-height">Height (CM):</label>
+									<div class="mdl-textfield mdl-js-textfield inputBox">
+									    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-height">
+									    <label class="mdl-textfield__label" for="singleDom-height"></label>
+									    <span class="mdl-textfield__error">Input is not a number!</span>
+									</div>
 								</div>
-							</div>
-							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="calcVolWeight('singleDom-volWeight')"><i><span class="material-icons">calculate</span></i>CALCULATE VOLUMETRIC WEIGHT</button>
-							<div class="inputContainer">
-								<label class="mdl-label" for="singleDom-volWeight">Volumetric Weight (KG)</label>
-								<div class="mdl-textfield mdl-js-textfield">
-								    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-volWeight" disabled>
-								    <label class="mdl-textfield__label" for="singleDom-volWeight"></label>
-								    <span class="mdl-textfield__error">Input is not a number!</span>
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="calcVolWeight('singleDom-volWeight')"><i><span class="material-icons">calculate</span></i>CALCULATE VOLUMETRIC WEIGHT</button>
+								<div class="inputContainer">
+									<label class="mdl-label" for="singleDom-volWeight">Volumetric Weight (KG):</label>
+									<div class="mdl-textfield mdl-js-textfield inputBox">
+									    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="singleDom-volWeight" disabled>
+									    <label class="mdl-textfield__label" for="singleDom-volWeight"></label>
+									    <span class="mdl-textfield__error">Input is not a number!</span>
+									</div>
 								</div>
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="clearParcelFields('singleDom')"><i><span class="material-icons">clear</span></i>CLEAR PARCEL DETAILS</button>	
 							</div>
-							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="clearParcelFields('singleDom')"><i><span class="material-icons">clear</span></i>CLEAR PARCEL DETAILS</button>	
+							</div>
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="submitForm()">NEXT</button>
 						</div>
-						</div>
-						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="submitForm()">NEXT</button>
-					</div>
+				</div><!-- end of shipping container -->
 
 				</div>
 				<!--
@@ -322,7 +324,7 @@
 				-->
 	        </div>
 		<!--</form> -->
-
+		<script type="text/javascript" src="js/shipping.js"></script>
       </div>
     </div>
   </body>
