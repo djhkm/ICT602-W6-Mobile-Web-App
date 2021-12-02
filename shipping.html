@@ -66,44 +66,49 @@
       </div>
       <!-- temp styles -->
       <style type="text/css">
-      	.shippingContainer{
-      		margin: 25px 20px;	
-      	}
+	      	.shippingContainer{
+	      		margin: 25px 20px;	
+	      	}
 
-      	.shippingRadio{
-      		vertical-align: middle;
-      	}
+	      	.shippingRadio{
+	      		vertical-align: middle;
+	      	}
 
-      	.inputContainer{
-      		margin-top: 10px;
-      	}
+	      	.inputContainer{
+	      		margin-top: 10px;
+	      	}
 
-      	.title4{
-      		border-bottom-style: solid;
-      		border-bottom-color: #FF0000;
-      	}
+	      	.title4{
+	      		border-bottom-style: solid;
+	      		border-bottom-color: #FF0000;
+	      	}
 
-      	.title5{
-      		border-left-style: solid;
-      		border-left-color: #FF0000;
-      		padding-left: 5px;
-      	}
+	      	.title5{
+	      		border-left-style: solid;
+	      		border-left-color: #FF0000;
+	      		padding-left: 5px;
+	      	}
 
-      	.divManyTableDom{
-      		overflow-x: scroll;
-      	}
+	      	.divManyTableDom{
+	      		overflow-x: scroll;
+	      	}
 
-      	textarea{
-      		resize: none;
-      	}
+	      	textarea{
+	      		resize: none;
+	      	}
 
-      	.btnAdd{
-      		margin: 10px 10px;
-      	}
+	      	.btnAdd{
+	      		margin: 10px 10px;
+	      		padding: 3px 3px;
+	      	}
 
-      	.tableMany td{
-      		text-align: center;
-      	}
+	      	.tableMany td{
+	      		text-align: center;
+	      	}
+
+	      	.titleIcons{
+	      		margin: 0px 15px;
+	      	}
       </style>
       <div class="android-content mdl-layout__content">
         <!-- start -->
@@ -134,7 +139,7 @@
 						</label>
 					</div>
 					<div>
-						<h5 class="title5">Sender Details</h5>
+						<h5 class="title5">Sender Details<i class="titleIcons"><span class="material-icons">flight_takeoff</span></i></h5>
 						<div class="inputContainer">
 							<label class="mdl-label" for="senderNameDom">Name</label>
 							<div class="mdl-textfield mdl-js-textfield">
@@ -164,7 +169,7 @@
 						</div>
 					</div>
 					<div>
-						<h5 class="title5">Receiver Details</h5>
+						<h5 class="title5">Receiver Details<i class="titleIcons"><span class="material-icons">flight_land</span></i></h5>
 						<div class="inputContainer">
 							<label class="mdl-label" for="receiverNameDom">Name</label>
 							<div class="mdl-textfield mdl-js-textfield">
@@ -194,7 +199,7 @@
 						</div>	
 					</div>
 					<div>
-						<h5 class="title5">Parcel Details</h5>
+						<h5 class="title5">Parcel Details<i><span class="material-icons titleIcons">grid_view</span></i></h5>
 						<!-- many parcels -->
 					<div id="manyParcelDivDom">
 						<div class="inputContainer">
@@ -244,8 +249,8 @@
 								    <span class="mdl-textfield__error">Input is not a number!</span>
 								</div>
 							</div>
-							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="addrow('manyTableDom')">ADD</button>
-							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="clearParcelFields('manyDom')">CLEAR PARCEL DETAILS</button>
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="addrow('manyTableDom')"><i><span class="material-icons">add_circle_outline</span></i>ADD</button>
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="clearParcelFields('manyDom')"><i><span class="material-icons">clear</span></i>CLEAR PARCEL DETAILS</button>
 							<div class="divManyTableDom">
 								<table class="mdl-data-table mdl-js-data-table tableMany" id="manyTableDom">
 						  			<thead>
@@ -263,7 +268,7 @@
 						  			</tbody>
 								</table>
 							</div>
-							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="clearTable('manyTableDom')">CLEAR TABLE</button>
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnAdd" onclick="clearTable('manyTableDom')"><i><span class="material-icons">delete_sweep</span></i>CLEAR TABLE</button>
 						</div>
 
 						<!-- single parcel -->
