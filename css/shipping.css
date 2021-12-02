@@ -1,0 +1,47 @@
+	      	.shippingContainer{
+	      		margin: 25px 20px;	
+	      	}
+
+	      	.shippingRadio{
+	      		vertical-align: middle;
+	      	}
+
+	      	.inputContainer{
+	      		margin-top: 10px;
+	      	}
+
+	      	.title4{
+	      		border-bottom-style: solid;
+	      		border-bottom-color: #FF0000;
+	      	}
+
+	      	.title5{
+	      		border-left-style: solid;
+	      		border-left-color: #FF0000;
+	      		padding-left: 5px;
+	      	}
+
+	      	.divManyTableDom{
+	      		overflow-x: scroll;
+	      	}
+
+	      	textarea{
+	      		resize: none;
+	      	}
+
+	      	.btnAdd{
+	      		margin: 10px 10px;
+	      		padding: 3px 3px;
+	      	}
+
+	      	.tableMany td{
+	      		text-align: center;
+	      	}
+
+	      	.tableMany th{
+	      		font-weight: bold;
+	      	}
+
+	      	.titleIcons{
+	      		margin: 0px 15px;
+	      	}
