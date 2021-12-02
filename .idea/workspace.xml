@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2dacc59-3022-4e87-a778-b3840aea68d1" name="Changes" comment="idk this">
+    <list default="true" id="d2dacc59-3022-4e87-a778-b3840aea68d1" name="Changes" comment="add toast to send button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mdl/material.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mdl/material.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mdl/material.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mdl/material.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial.html" beforeDir="false" afterPath="$PROJECT_DIR$/initial.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shipping.html" beforeDir="false" afterPath="$PROJECT_DIR$/shipping.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/track.html" beforeDir="false" afterPath="$PROJECT_DIR$/track.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +50,8 @@
       <updated>1638272339499</updated>
       <workItem from="1638272363743" duration="4357000" />
       <workItem from="1638321030041" duration="167000" />
-      <workItem from="1638371106569" duration="9879000" />
+      <workItem from="1638371106569" duration="12305000" />
+      <workItem from="1638411721256" duration="546000" />
     </task>
     <task id="LOCAL-00001" summary="color scheme update">
       <created>1638281662588</created>
@@ -65,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638398782960</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add toast to send button">
+      <created>1638399119001</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638399119001</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +104,7 @@
     <MESSAGE value="color scheme update" />
     <MESSAGE value="add new plugin, update style, update contact us page" />
     <MESSAGE value="idk this" />
-    <option name="LAST_COMMIT_MESSAGE" value="idk this" />
+    <MESSAGE value="add toast to send button" />
+    <option name="LAST_COMMIT_MESSAGE" value="add toast to send button" />
   </component>
 </project>

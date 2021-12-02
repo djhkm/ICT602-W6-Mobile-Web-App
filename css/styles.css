@@ -574,3 +574,10 @@ a img{
 .margin-bottom-0px {
   margin-bottom: 0 !important;
 }
+
+@media screen and (max-width: 1024px) {
+  .mdl-layout__header-row {
+    height: 60px !important;
+    padding: 0 16px 0 72px;
+  }
+}
